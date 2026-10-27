@@ -16,6 +16,9 @@ services:
         required: false
     environment:
       PORT: "7100"
+    extra_hosts:
+      # Lets the add-on reach services on this computer (e.g. Ollama) as host.docker.internal, on Linux too.
+      - "host.docker.internal:host-gateway"
     ports:
       # Bound to 127.0.0.1 only: not reachable from other machines without a tunnel.
       - "127.0.0.1:${HOST_PORT:-7100}:7100"

@@ -2,7 +2,7 @@
 
 /**
  * Heuristics for "this looks like a real secret", used to keep API keys out of
- * examples/ (docs/SPEC.md §9). False positives are fine: rename or move the value.
+ * examples/. False positives are fine: rename or move the value.
  */
 
 /** @type {{ name: string, pattern: RegExp }[]} */

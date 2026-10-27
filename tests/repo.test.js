@@ -1,6 +1,7 @@
 'use strict';
 
-// Guards for the repository's own invariants (docs/SPEC.md §3, §9, §12).
+// Guards for the repository's own invariants: layout, pointer files, content policy,
+// examples and secrets.
 
 const test = require('node:test');
 const assert = require('node:assert/strict');
@@ -12,7 +13,7 @@ const ROOT = path.join(__dirname, '..');
 const read = (file) => fs.readFileSync(path.join(ROOT, file), 'utf8');
 
 test('required top-level files exist', () => {
-  for (const file of ['README.md', 'AGENTS.md', 'CLAUDE.md', 'GEMINI.md', 'LICENSE', 'docs/SPEC.md']) {
+  for (const file of ['README.md', 'AGENTS.md', 'CLAUDE.md', 'GEMINI.md', 'LICENSE']) {
     assert.ok(fs.existsSync(path.join(ROOT, file)), `${file} is missing`);
   }
 });
@@ -36,7 +37,7 @@ test('README states the content policy and independence from Stremio', () => {
   assert.match(readme, /independent community project/i);
 });
 
-// ------------------------------------------------------------- examples (SPEC §7, §9)
+// ------------------------------------------------------------------------- examples
 
 const { validateForgeConfig } = require('../tools/lib/forge-config');
 const { findSecrets } = require('../tools/lib/secrets');

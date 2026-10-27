@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Exit codes shared by every forge command (see docs/SPEC.md §6).
+ * Exit codes shared by every forge command.
  * @readonly
  */
 const EXIT = Object.freeze({

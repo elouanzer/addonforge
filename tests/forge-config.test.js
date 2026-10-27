@@ -28,7 +28,7 @@ const valid = () => ({
 /** @param {object} config */
 const errorPaths = (config) => validateForgeConfig(config).map((e) => e.path);
 
-test('the SPEC §6.5 example is valid', () => {
+test('the reference example is valid', () => {
   assert.deepEqual(validateForgeConfig(valid()), []);
 });
 

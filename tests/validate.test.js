@@ -1,8 +1,7 @@
 'use strict';
 
-// The validator against a valid fixture add-on and one broken fixture per rule
-// (docs/SPEC.md §6.3, milestone M3). The last test fails if any rule in
-// tools/lib/rules.js has no broken fixture.
+// The validator against a valid fixture add-on and one broken fixture per rule.
+// The last test fails if any rule in tools/lib/rules.js has no broken fixture.
 
 const test = require('node:test');
 const assert = require('node:assert/strict');

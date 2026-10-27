@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "addon.forge.json",
-  "description": "Machine-readable record of the Phase 1 interview (docs/SPEC.md §6.5). Used by `forge new`, `smoke`, `list` and CI.",
+  "description": "Machine-readable record of the Phase 1 interview (AGENTS.md). Used by `forge new`, `smoke`, `list` and CI.",
   "type": "object",
   "additionalProperties": false,
   "required": ["name", "description", "template", "resources", "types", "idScheme"],

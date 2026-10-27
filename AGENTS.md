@@ -91,4 +91,4 @@ Key facts: add-on URLs must be HTTPS (with CORS) except on `127.0.0.1`; the SDK 
 
 ## Working on Addon Forge itself
 
-If you are developing this repository (not building a user's add-on), read [`docs/SPEC.md`](docs/SPEC.md) and run `npm run lint` and `npm test` before finishing.
+If you are developing this repository (not building a user's add-on), run `npm run lint` and `npm test` before finishing.

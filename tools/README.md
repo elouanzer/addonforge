@@ -27,6 +27,6 @@ Prefer the Node standard library (`node:http`, `node:test`, `fetch`). Each depen
 
 | Package | Kind | Why |
 |---|---|---|
-| `eslint` | dev | Linting, required by the quality bar (SPEC §9) |
+| `eslint` | dev | Linting; CI fails on errors |
 | `@eslint/js` | dev | ESLint's recommended rule set, used by `eslint.config.js` |
 | `globals` | dev | Node global names for ESLint, instead of maintaining the list by hand |

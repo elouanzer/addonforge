@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Reading, validating and interpreting addon.forge.json (docs/SPEC.md §6.5).
+ * Reading, validating and interpreting addon.forge.json, the record of the interview.
  */
 
 const fs = require('node:fs');

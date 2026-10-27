@@ -21,7 +21,7 @@ jobs:
       - run: npm run lint
 
   test:
-    # The tools must work on macOS, Linux and Windows (SPEC §9).
+    # The tools must work on macOS, Linux and Windows.
     strategy:
       fail-fast: false
       matrix:

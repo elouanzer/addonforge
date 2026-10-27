@@ -1,0 +1,42 @@
+{
+  "$schema": "../../tools/lib/schemas/forge.schema.json",
+  "name": "hello-catalog",
+  "displayName": "Hello Catalog",
+  "description": "A small catalog of public-domain films. No configuration, no API keys.",
+  "template": "node-sdk",
+  "resources": [
+    "catalog"
+  ],
+  "types": [
+    "movie"
+  ],
+  "idScheme": "imdb",
+  "sources": [
+    {
+      "name": "public-domain list (built in)",
+      "needsKey": false
+    }
+  ],
+  "catalogFeatures": [
+    "search",
+    "genre"
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Comedy",
+    "Crime",
+    "Drama",
+    "Fantasy",
+    "Film-Noir",
+    "Horror",
+    "Mystery",
+    "Romance",
+    "Sci-Fi",
+    "Thriller"
+  ],
+  "userConfig": [],
+  "hosting": "localhost",
+  "port": 7100,
+  "contentPolicyAcknowledged": false
+}

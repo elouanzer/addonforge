@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# The user's own add-ons are generated here and never committed.
+# Only reviewed contributions go in examples/.
+addons/*
+!addons/.gitkeep
+
+# Secrets: never commit a real .env (the .env.example files are fine).
+.env
+.env.*
+*.env
+!.env.example
+# Keys, certificates and credentials files
+*.pem
+*.key
+*.p12
+*.pfx
+.npmrc
+.cloudflared/
+
+# Personal data: a Letterboxd (or any) export goes in an example's data/ folder,
+# which stays empty in git. Exports also arrive as ZIP files.
+examples/*/data/*
+!examples/*/data/.gitkeep
+*.zip
+
+# Local assistant settings
+.claude/settings.local.json
+
+# Logs and tool output
+*.log
+npm-debug.log*
+coverage/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

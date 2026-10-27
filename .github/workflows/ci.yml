@@ -1,0 +1,117 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+
+  test:
+    # The tools must work on macOS, Linux and Windows (SPEC §9).
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        node: [22, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+      - run: npm ci
+      - run: npm test
+
+  template:
+    # The template's own handler tests, as a generated add-on would run them.
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: templates/node-sdk
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: templates/node-sdk/package-lock.json
+      - run: npm ci
+      - run: npm test
+
+  docker:
+    # M2 acceptance: `forge new demo` produces an add-on that starts healthy in Docker.
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+      - run: node tools/forge.js doctor
+      - run: node tools/forge.js new demo
+      - run: node tools/forge.js validate addons/demo --static
+      - name: Start the add-on and wait for its healthcheck
+        working-directory: addons/demo
+        run: docker compose up -d --build --wait
+      - run: node tools/forge.js validate http://127.0.0.1:7100
+      - name: Logs on failure
+        if: failure()
+        working-directory: addons/demo
+        run: docker compose logs
+      - name: Stop
+        if: always()
+        working-directory: addons/demo
+        run: docker compose down
+
+  examples:
+    # Every example: its own tests, then validate + smoke against it running in Docker.
+    # tests/repo.test.js fails if an example folder is missing from this list.
+    strategy:
+      fail-fast: false
+      matrix:
+        example: [hello-catalog, letterboxd-nl-search]
+    runs-on: ubuntu-latest
+    env:
+      DIR: examples/${{ matrix.example }}
+      # A real query for search-only catalogs; examples needing keys run in their keyless mode.
+      SEARCH: 70s thriller
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: examples/${{ matrix.example }}/package-lock.json
+      - name: Unit tests
+        working-directory: ${{ env.DIR }}
+        run: npm ci && npm test
+      - run: node tools/forge.js validate "$DIR" --static
+      - name: Start in Docker
+        working-directory: ${{ env.DIR }}
+        run: docker compose up -d --build --wait
+      - name: Port from addon.forge.json
+        run: echo "PORT=$(node -p "require('./$DIR/addon.forge.json').port || 7100")" >> "$GITHUB_ENV"
+      - run: node tools/forge.js validate "http://127.0.0.1:$PORT" --search "$SEARCH"
+      - run: node tools/forge.js smoke "http://127.0.0.1:$PORT" --search "$SEARCH"
+      - name: Logs on failure
+        if: failure()
+        working-directory: ${{ env.DIR }}
+        run: docker compose logs
+      - name: Stop
+        if: always()
+        working-directory: ${{ env.DIR }}
+        run: docker compose down

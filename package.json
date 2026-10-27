@@ -1,0 +1,24 @@
+{
+  "name": "addonforge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Create, test, run and share your own Stremio add-on by describing it to a coding assistant.",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "bin": {
+    "forge": "tools/forge.js"
+  },
+  "scripts": {
+    "forge": "node tools/forge.js",
+    "lint": "eslint .",
+    "test": "node --test \"tests/**/*.test.js\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}

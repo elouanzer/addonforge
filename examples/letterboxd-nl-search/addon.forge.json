@@ -1,0 +1,43 @@
+{
+  "$schema": "../../tools/lib/schemas/forge.schema.json",
+  "name": "letterboxd-nl-search",
+  "displayName": "Letterboxd NL Search",
+  "description": "Search films in plain language (\"slow-burn 70s thrillers set in Paris\"), optionally personalised with your own Letterboxd export. Not affiliated with Letterboxd.",
+  "template": "node-sdk",
+  "resources": [
+    "catalog"
+  ],
+  "types": [
+    "movie"
+  ],
+  "idScheme": "imdb",
+  "sources": [
+    {
+      "name": "letterboxd export (your own files)",
+      "needsKey": false,
+      "terms": "https://letterboxd.com/legal/terms-of-use/"
+    },
+    {
+      "name": "cinemeta",
+      "needsKey": false,
+      "terms": "https://github.com/Stremio/stremio-addon-sdk"
+    },
+    {
+      "name": "anthropic",
+      "needsKey": true,
+      "terms": "https://www.anthropic.com/legal/commercial-terms"
+    },
+    {
+      "name": "openai",
+      "needsKey": true,
+      "terms": "https://openai.com/policies/terms-of-use/"
+    }
+  ],
+  "catalogFeatures": [
+    "searchOnly"
+  ],
+  "userConfig": [],
+  "hosting": "localhost",
+  "port": 7101,
+  "contentPolicyAcknowledged": false
+}

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Addon Forge</title>
+  <defs>
+    <linearGradient id="anvil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9d6bff"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+    <!-- userSpaceOnUse: a gradient sized to its own box does not render on a vertical line -->
+    <linearGradient id="spark" gradientUnits="userSpaceOnUse" x1="164" y1="0" x2="384" y2="0">
+      <stop offset="0" stop-color="#4f6bff"/>
+      <stop offset="1" stop-color="#a66bff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="104" fill="#13141f"/>
+
+  <g transform="translate(0 16)">
+    <!-- Sparks -->
+    <g stroke="url(#spark)" stroke-width="14" stroke-linecap="round" fill="none">
+      <line x1="274" y1="60" x2="274" y2="92"/>
+      <line x1="212" y1="78" x2="228" y2="104"/>
+      <line x1="336" y1="78" x2="320" y2="104"/>
+      <line x1="166" y1="118" x2="192" y2="132"/>
+      <line x1="382" y1="118" x2="356" y2="132"/>
+    </g>
+
+    <!-- The add-on being forged: a puzzle piece standing on the anvil -->
+    <path fill="#ffffff" stroke="#ffffff" stroke-width="10" stroke-linejoin="round"
+          d="M 228 170 L 256 170
+             C 248 154, 254 138, 274 138 C 294 138, 300 154, 292 170
+             L 320 170 L 320 198
+             C 334 190, 352 196, 352 214 C 352 232, 334 238, 320 230
+             L 320 262 L 228 262 L 228 230
+             C 242 238, 260 232, 260 214 C 260 196, 242 190, 228 198 Z"/>
+
+    <!-- Anvil -->
+    <path fill="url(#anvil)"
+          d="M 62 276
+             C 104 270, 136 268, 158 268
+             L 442 268 Q 452 268 452 278 L 452 296 Q 452 306 442 307
+             C 404 312, 378 326, 370 352
+             L 370 372 L 402 388 Q 410 392 410 400 L 410 414 Q 410 422 402 422
+             L 162 422 Q 154 422 154 414 L 154 400 Q 154 392 162 388
+             L 194 372 L 194 352
+             C 188 334, 176 322, 156 318
+             C 124 312, 92 300, 62 276 Z"/>
+    <!-- Light edge along the face, for contrast at small sizes -->
+    <path fill="#c4b5fd" d="M 70 275 C 108 271, 138 269, 158 269 L 442 269 Q 451 269 451.5 277 L 158 277 C 128 277, 98 278, 70 275 Z"/>
+  </g>
+</svg>

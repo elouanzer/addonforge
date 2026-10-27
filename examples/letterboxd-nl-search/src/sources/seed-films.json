@@ -1,0 +1,4799 @@
+[
+ {
+  "id": "tt0069947",
+  "name": "The Day of the Jackal",
+  "year": 1973,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United Kingdom",
+   "France"
+  ],
+  "directors": [
+   "Fred Zinnemann"
+  ],
+  "tags": [
+   "slow-burn",
+   "tense",
+   "paris",
+   "assassin",
+   "conspiracy",
+   "political"
+  ]
+ },
+ {
+  "id": "tt0065531",
+  "name": "The Red Circle",
+  "aka": [
+   "Le Cercle Rouge"
+  ],
+  "year": 1970,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "France",
+   "Italy"
+  ],
+  "directors": [
+   "Jean-Pierre Melville"
+  ],
+  "tags": [
+   "slow-burn",
+   "paris",
+   "heist",
+   "gangster",
+   "cool",
+   "atmospheric"
+  ]
+ },
+ {
+  "id": "tt0074811",
+  "name": "The Tenant",
+  "year": 1976,
+  "genres": [
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Roman Polanski"
+  ],
+  "tags": [
+   "paris",
+   "paranoia",
+   "psychological",
+   "dark",
+   "surreal",
+   "apartment"
+  ]
+ },
+ {
+  "id": "tt0062229",
+  "name": "Le Samouraï",
+  "year": 1967,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "France",
+   "Italy"
+  ],
+  "directors": [
+   "Jean-Pierre Melville"
+  ],
+  "tags": [
+   "slow-burn",
+   "paris",
+   "assassin",
+   "cool",
+   "minimalist",
+   "noir"
+  ]
+ },
+ {
+  "id": "tt0048021",
+  "name": "Rififi",
+  "year": 1955,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Jules Dassin"
+  ],
+  "tags": [
+   "paris",
+   "heist",
+   "noir",
+   "black-and-white",
+   "tense"
+  ]
+ },
+ {
+  "id": "tt0053472",
+  "name": "Breathless",
+  "year": 1960,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Jean-Luc Godard"
+  ],
+  "tags": [
+   "paris",
+   "new-wave",
+   "romance",
+   "cool",
+   "black-and-white",
+   "crime"
+  ]
+ },
+ {
+  "id": "tt0211915",
+  "name": "Amélie",
+  "year": 2001,
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "countries": [
+   "France",
+   "Germany"
+  ],
+  "directors": [
+   "Jean-Pierre Jeunet"
+  ],
+  "tags": [
+   "paris",
+   "feel-good",
+   "quirky",
+   "romantic",
+   "whimsical",
+   "cozy"
+  ]
+ },
+ {
+  "id": "tt0382932",
+  "name": "Ratatouille",
+  "year": 2007,
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Comedy"
+  ],
+  "countries": [
+   "United States",
+   "France",
+   "Japan"
+  ],
+  "directors": [
+   "Brad Bird",
+   "Jan Pinkava"
+  ],
+  "tags": [
+   "paris",
+   "animation",
+   "cooking",
+   "feel-good",
+   "family"
+  ]
+ },
+ {
+  "id": "tt0113247",
+  "name": "La haine",
+  "year": 1995,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Mathieu Kassovitz"
+  ],
+  "tags": [
+   "paris",
+   "suburbs",
+   "black-and-white",
+   "gritty",
+   "youth",
+   "police"
+  ]
+ },
+ {
+  "id": "tt1605783",
+  "name": "Midnight in Paris",
+  "year": 2011,
+  "genres": [
+   "Comedy",
+   "Fantasy",
+   "Romance"
+  ],
+  "countries": [
+   "France",
+   "Spain",
+   "United States"
+  ],
+  "directors": [
+   "Woody Allen"
+  ],
+  "tags": [
+   "paris",
+   "time-travel",
+   "romantic",
+   "nostalgic",
+   "writers",
+   "whimsical"
+  ]
+ },
+ {
+  "id": "tt0381681",
+  "name": "Before Sunset",
+  "year": 2004,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Richard Linklater"
+  ],
+  "tags": [
+   "paris",
+   "romance",
+   "talky",
+   "real-time",
+   "bittersweet"
+  ]
+ },
+ {
+  "id": "tt0095174",
+  "name": "Frantic",
+  "year": 1988,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Roman Polanski"
+  ],
+  "tags": [
+   "paris",
+   "thriller",
+   "kidnapping",
+   "tense",
+   "conspiracy"
+  ]
+ },
+ {
+  "id": "tt0122690",
+  "name": "Ronin",
+  "year": 1998,
+  "genres": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "John Frankenheimer"
+  ],
+  "tags": [
+   "paris",
+   "car-chase",
+   "spy",
+   "heist",
+   "action"
+  ]
+ },
+ {
+  "id": "tt0387898",
+  "name": "Caché",
+  "year": 2005,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "France",
+   "Austria",
+   "Germany",
+   "Italy"
+  ],
+  "directors": [
+   "Michael Haneke"
+  ],
+  "tags": [
+   "paris",
+   "slow-burn",
+   "mystery",
+   "surveillance",
+   "psychological",
+   "dark"
+  ]
+ },
+ {
+  "id": "tt0053198",
+  "name": "The 400 Blows",
+  "year": 1959,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "François Truffaut"
+  ],
+  "tags": [
+   "paris",
+   "coming-of-age",
+   "new-wave",
+   "black-and-white",
+   "childhood"
+  ]
+ },
+ {
+  "id": "tt0071315",
+  "name": "Chinatown",
+  "year": 1974,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Roman Polanski"
+  ],
+  "tags": [
+   "slow-burn",
+   "los-angeles",
+   "noir",
+   "detective",
+   "conspiracy",
+   "bleak"
+  ]
+ },
+ {
+  "id": "tt0071360",
+  "name": "The Conversation",
+  "year": 1974,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Francis Ford Coppola"
+  ],
+  "tags": [
+   "slow-burn",
+   "surveillance",
+   "paranoia",
+   "san-francisco",
+   "tense",
+   "psychological"
+  ]
+ },
+ {
+  "id": "tt0073802",
+  "name": "Three Days of the Condor",
+  "year": 1975,
+  "genres": [
+   "Crime",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Sydney Pollack"
+  ],
+  "tags": [
+   "conspiracy",
+   "spy",
+   "new-york",
+   "paranoia",
+   "tense"
+  ]
+ },
+ {
+  "id": "tt0074119",
+  "name": "All the President's Men",
+  "year": 1976,
+  "genres": [
+   "Drama",
+   "History",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Alan J. Pakula"
+  ],
+  "tags": [
+   "journalism",
+   "conspiracy",
+   "political",
+   "washington",
+   "based-on-true-story",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt0071970",
+  "name": "The Parallax View",
+  "year": 1974,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Alan J. Pakula"
+  ],
+  "tags": [
+   "conspiracy",
+   "paranoia",
+   "assassin",
+   "political",
+   "slow-burn",
+   "bleak"
+  ]
+ },
+ {
+  "id": "tt0067309",
+  "name": "Klute",
+  "year": 1971,
+  "genres": [
+   "Crime",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Alan J. Pakula"
+  ],
+  "tags": [
+   "slow-burn",
+   "new-york",
+   "detective",
+   "psychological",
+   "stalker",
+   "noir"
+  ]
+ },
+ {
+  "id": "tt0069995",
+  "name": "Don't Look Now",
+  "year": 1973,
+  "genres": [
+   "Drama",
+   "Horror",
+   "Mystery"
+  ],
+  "countries": [
+   "United Kingdom",
+   "Italy"
+  ],
+  "directors": [
+   "Nicolas Roeg"
+  ],
+  "tags": [
+   "venice",
+   "slow-burn",
+   "grief",
+   "horror",
+   "atmospheric",
+   "mystery"
+  ]
+ },
+ {
+  "id": "tt0075314",
+  "name": "Taxi Driver",
+  "year": 1976,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "tags": [
+   "new-york",
+   "dark",
+   "loneliness",
+   "violent",
+   "gritty",
+   "character-study"
+  ]
+ },
+ {
+  "id": "tt0067116",
+  "name": "The French Connection",
+  "year": 1971,
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "William Friedkin"
+  ],
+  "tags": [
+   "new-york",
+   "police",
+   "car-chase",
+   "gritty",
+   "drugs"
+  ]
+ },
+ {
+  "id": "tt0072890",
+  "name": "Dog Day Afternoon",
+  "year": 1975,
+  "genres": [
+   "Biography",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Sidney Lumet"
+  ],
+  "tags": [
+   "new-york",
+   "heist",
+   "based-on-true-story",
+   "tense",
+   "real-time"
+  ]
+ },
+ {
+  "id": "tt0073195",
+  "name": "Jaws",
+  "year": 1975,
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Horror"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "tags": [
+   "shark",
+   "sea",
+   "summer",
+   "small-town",
+   "monster",
+   "tense"
+  ]
+ },
+ {
+  "id": "tt0078748",
+  "name": "Alien",
+  "year": 1979,
+  "genres": [
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Ridley Scott"
+  ],
+  "tags": [
+   "space",
+   "monster",
+   "horror",
+   "tense",
+   "claustrophobic",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0078788",
+  "name": "Apocalypse Now",
+  "year": 1979,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "War"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Francis Ford Coppola"
+  ],
+  "tags": [
+   "war",
+   "vietnam",
+   "jungle",
+   "epic",
+   "surreal",
+   "dark"
+  ]
+ },
+ {
+  "id": "tt0068646",
+  "name": "The Godfather",
+  "year": 1972,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Francis Ford Coppola"
+  ],
+  "tags": [
+   "gangster",
+   "family",
+   "epic",
+   "new-york",
+   "crime",
+   "classic"
+  ]
+ },
+ {
+  "id": "tt0075686",
+  "name": "Annie Hall",
+  "year": 1977,
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Woody Allen"
+  ],
+  "tags": [
+   "new-york",
+   "romance",
+   "funny",
+   "neurotic",
+   "talky"
+  ]
+ },
+ {
+  "id": "tt0079944",
+  "name": "Stalker",
+  "year": 1979,
+  "genres": [
+   "Drama",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "Soviet Union"
+  ],
+  "directors": [
+   "Andrei Tarkovsky"
+  ],
+  "tags": [
+   "slow-burn",
+   "philosophical",
+   "soviet",
+   "mysterious",
+   "atmospheric",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0069293",
+  "name": "Solaris",
+  "year": 1972,
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "Soviet Union"
+  ],
+  "directors": [
+   "Andrei Tarkovsky"
+  ],
+  "tags": [
+   "space",
+   "slow-burn",
+   "philosophical",
+   "soviet",
+   "grief",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0069762",
+  "name": "Badlands",
+  "year": 1973,
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Terrence Malick"
+  ],
+  "tags": [
+   "road-trip",
+   "crime",
+   "lovers-on-the-run",
+   "nature",
+   "violent"
+  ]
+ },
+ {
+  "id": "tt0073540",
+  "name": "Picnic at Hanging Rock",
+  "year": 1975,
+  "genres": [
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "Australia"
+  ],
+  "directors": [
+   "Peter Weir"
+  ],
+  "tags": [
+   "mystery",
+   "australia",
+   "dreamlike",
+   "atmospheric",
+   "slow-burn",
+   "school"
+  ]
+ },
+ {
+  "id": "tt0077405",
+  "name": "Days of Heaven",
+  "year": 1978,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Terrence Malick"
+  ],
+  "tags": [
+   "texas",
+   "farm",
+   "beautiful",
+   "romance",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt0070379",
+  "name": "Mean Streets",
+  "year": 1973,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "tags": [
+   "new-york",
+   "gangster",
+   "gritty",
+   "friendship"
+  ]
+ },
+ {
+  "id": "tt0074958",
+  "name": "Network",
+  "year": 1976,
+  "genres": [
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Sidney Lumet"
+  ],
+  "tags": [
+   "satire",
+   "television",
+   "media",
+   "new-york",
+   "angry"
+  ]
+ },
+ {
+  "id": "tt0075148",
+  "name": "Rocky",
+  "year": 1976,
+  "genres": [
+   "Drama",
+   "Sport"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "John G. Avildsen"
+  ],
+  "tags": [
+   "boxing",
+   "sports",
+   "underdog",
+   "philadelphia",
+   "feel-good"
+  ]
+ },
+ {
+  "id": "tt0070047",
+  "name": "The Exorcist",
+  "year": 1973,
+  "genres": [
+   "Horror"
+  ],
+  "countries": [
+   "United States",
+   "Iraq"
+  ],
+  "directors": [
+   "William Friedkin"
+  ],
+  "tags": [
+   "horror",
+   "possession",
+   "demonic",
+   "dark",
+   "religion"
+  ]
+ },
+ {
+  "id": "tt0077651",
+  "name": "Halloween",
+  "year": 1978,
+  "genres": [
+   "Horror",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "John Carpenter"
+  ],
+  "tags": [
+   "slasher",
+   "horror",
+   "small-town",
+   "masked-killer",
+   "suburbs"
+  ]
+ },
+ {
+  "id": "tt0076786",
+  "name": "Suspiria",
+  "year": 1977,
+  "genres": [
+   "Horror"
+  ],
+  "countries": [
+   "Italy"
+  ],
+  "directors": [
+   "Dario Argento"
+  ],
+  "tags": [
+   "horror",
+   "witch",
+   "ballet",
+   "colorful",
+   "surreal",
+   "germany"
+  ]
+ },
+ {
+  "id": "tt0075860",
+  "name": "Close Encounters of the Third Kind",
+  "year": 1977,
+  "genres": [
+   "Drama",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "tags": [
+   "aliens",
+   "ufo",
+   "wonder",
+   "family",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0076759",
+  "name": "Star Wars: Episode IV - A New Hope",
+  "aka": [
+   "Star Wars"
+  ],
+  "year": 1977,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Fantasy"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "George Lucas"
+  ],
+  "tags": [
+   "space",
+   "adventure",
+   "epic",
+   "family",
+   "space-opera",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0047396",
+  "name": "Rear Window",
+  "year": 1954,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Alfred Hitchcock"
+  ],
+  "tags": [
+   "voyeurism",
+   "apartment",
+   "murder",
+   "mystery",
+   "one-location",
+   "tense"
+  ]
+ },
+ {
+  "id": "tt0052357",
+  "name": "Vertigo",
+  "year": 1958,
+  "genres": [
+   "Mystery",
+   "Romance",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Alfred Hitchcock"
+  ],
+  "tags": [
+   "san-francisco",
+   "obsession",
+   "psychological",
+   "mystery",
+   "romance"
+  ]
+ },
+ {
+  "id": "tt0054215",
+  "name": "Psycho",
+  "year": 1960,
+  "genres": [
+   "Drama",
+   "Horror",
+   "Mystery"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Alfred Hitchcock"
+  ],
+  "tags": [
+   "horror",
+   "motel",
+   "twist",
+   "black-and-white",
+   "serial-killer"
+  ]
+ },
+ {
+  "id": "tt0053125",
+  "name": "North by Northwest",
+  "year": 1959,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Alfred Hitchcock"
+  ],
+  "tags": [
+   "spy",
+   "chase",
+   "mistaken-identity",
+   "adventure",
+   "fun"
+  ]
+ },
+ {
+  "id": "tt0041959",
+  "name": "The Third Man",
+  "year": 1949,
+  "genres": [
+   "Drama",
+   "Film-Noir",
+   "Mystery"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Carol Reed"
+  ],
+  "tags": [
+   "vienna",
+   "noir",
+   "black-and-white",
+   "post-war",
+   "mystery"
+  ]
+ },
+ {
+  "id": "tt0036775",
+  "name": "Double Indemnity",
+  "year": 1944,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Film-Noir"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Billy Wilder"
+  ],
+  "tags": [
+   "noir",
+   "insurance",
+   "femme-fatale",
+   "murder",
+   "black-and-white",
+   "los-angeles"
+  ]
+ },
+ {
+  "id": "tt0034583",
+  "name": "Casablanca",
+  "year": 1942,
+  "genres": [
+   "Drama",
+   "Romance",
+   "War"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Michael Curtiz"
+  ],
+  "tags": [
+   "romance",
+   "war",
+   "morocco",
+   "classic",
+   "black-and-white"
+  ]
+ },
+ {
+  "id": "tt0043014",
+  "name": "Sunset Boulevard",
+  "year": 1950,
+  "genres": [
+   "Drama",
+   "Film-Noir"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Billy Wilder"
+  ],
+  "tags": [
+   "hollywood",
+   "noir",
+   "black-and-white",
+   "obsession",
+   "los-angeles"
+  ]
+ },
+ {
+  "id": "tt0047478",
+  "name": "Seven Samurai",
+  "year": 1954,
+  "genres": [
+   "Action",
+   "Drama"
+  ],
+  "countries": [
+   "Japan"
+  ],
+  "directors": [
+   "Akira Kurosawa"
+  ],
+  "tags": [
+   "samurai",
+   "japan",
+   "epic",
+   "action",
+   "black-and-white"
+  ]
+ },
+ {
+  "id": "tt0042876",
+  "name": "Rashomon",
+  "year": 1950,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "Japan"
+  ],
+  "directors": [
+   "Akira Kurosawa"
+  ],
+  "tags": [
+   "japan",
+   "mystery",
+   "unreliable-narrator",
+   "black-and-white",
+   "courtroom"
+  ]
+ },
+ {
+  "id": "tt0046438",
+  "name": "Tokyo Story",
+  "year": 1953,
+  "genres": [
+   "Drama"
+  ],
+  "countries": [
+   "Japan"
+  ],
+  "directors": [
+   "Yasujiro Ozu"
+  ],
+  "tags": [
+   "japan",
+   "family",
+   "slow-burn",
+   "ageing",
+   "bittersweet"
+  ]
+ },
+ {
+  "id": "tt0245429",
+  "name": "Spirited Away",
+  "year": 2001,
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Family"
+  ],
+  "countries": [
+   "Japan",
+   "United States"
+  ],
+  "directors": [
+   "Hayao Miyazaki"
+  ],
+  "tags": [
+   "japan",
+   "animation",
+   "fantasy",
+   "family",
+   "whimsical",
+   "coming-of-age"
+  ]
+ },
+ {
+  "id": "tt0096283",
+  "name": "My Neighbor Totoro",
+  "year": 1988,
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Comedy"
+  ],
+  "countries": [
+   "Japan"
+  ],
+  "directors": [
+   "Hayao Miyazaki"
+  ],
+  "tags": [
+   "japan",
+   "animation",
+   "cozy",
+   "family",
+   "feel-good",
+   "countryside"
+  ]
+ },
+ {
+  "id": "tt0335266",
+  "name": "Lost in Translation",
+  "year": 2003,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "Japan",
+   "United States"
+  ],
+  "directors": [
+   "Sofia Coppola"
+  ],
+  "tags": [
+   "tokyo",
+   "loneliness",
+   "romance",
+   "bittersweet",
+   "hotel"
+  ]
+ },
+ {
+  "id": "tt0094625",
+  "name": "Akira",
+  "year": 1988,
+  "genres": [
+   "Animation",
+   "Action",
+   "Drama"
+  ],
+  "countries": [
+   "Japan"
+  ],
+  "directors": [
+   "Katsuhiro Otomo"
+  ],
+  "tags": [
+   "tokyo",
+   "animation",
+   "cyberpunk",
+   "dystopia",
+   "motorbike",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0113568",
+  "name": "Ghost in the Shell",
+  "year": 1995,
+  "genres": [
+   "Animation",
+   "Action",
+   "Crime"
+  ],
+  "countries": [
+   "Japan",
+   "United Kingdom"
+  ],
+  "directors": [
+   "Mamoru Oshii"
+  ],
+  "tags": [
+   "animation",
+   "cyberpunk",
+   "ai",
+   "philosophical",
+   "japan",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0118694",
+  "name": "In the Mood for Love",
+  "year": 2000,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "Hong Kong",
+   "France"
+  ],
+  "directors": [
+   "Wong Kar-Wai"
+  ],
+  "tags": [
+   "hong-kong",
+   "romance",
+   "slow-burn",
+   "beautiful",
+   "longing",
+   "1960s"
+  ]
+ },
+ {
+  "id": "tt0109424",
+  "name": "Chungking Express",
+  "year": 1994,
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "Hong Kong"
+  ],
+  "directors": [
+   "Wong Kar-Wai"
+  ],
+  "tags": [
+   "hong-kong",
+   "romance",
+   "quirky",
+   "loneliness",
+   "cool"
+  ]
+ },
+ {
+  "id": "tt0364569",
+  "name": "Oldboy",
+  "year": 2003,
+  "genres": [
+   "Action",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "South Korea"
+  ],
+  "directors": [
+   "Park Chan-wook"
+  ],
+  "tags": [
+   "korea",
+   "revenge",
+   "twist",
+   "violent",
+   "mystery",
+   "dark"
+  ]
+ },
+ {
+  "id": "tt6751668",
+  "name": "Parasite",
+  "year": 2019,
+  "genres": [
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "South Korea"
+  ],
+  "directors": [
+   "Bong Joon Ho"
+  ],
+  "tags": [
+   "korea",
+   "class",
+   "satire",
+   "twist",
+   "family",
+   "thriller"
+  ]
+ },
+ {
+  "id": "tt0353969",
+  "name": "Memories of Murder",
+  "year": 2003,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "South Korea"
+  ],
+  "directors": [
+   "Bong Joon Ho"
+  ],
+  "tags": [
+   "korea",
+   "detective",
+   "serial-killer",
+   "based-on-true-story",
+   "slow-burn",
+   "countryside"
+  ]
+ },
+ {
+  "id": "tt4016934",
+  "name": "The Handmaiden",
+  "year": 2016,
+  "genres": [
+   "Drama",
+   "Romance",
+   "Thriller"
+  ],
+  "countries": [
+   "South Korea"
+  ],
+  "directors": [
+   "Park Chan-wook"
+  ],
+  "tags": [
+   "korea",
+   "twist",
+   "con-artist",
+   "romance",
+   "erotic",
+   "period"
+  ]
+ },
+ {
+  "id": "tt5700672",
+  "name": "Train to Busan",
+  "year": 2016,
+  "genres": [
+   "Action",
+   "Horror",
+   "Thriller"
+  ],
+  "countries": [
+   "South Korea"
+  ],
+  "directors": [
+   "Yeon Sang-ho"
+  ],
+  "tags": [
+   "korea",
+   "zombies",
+   "train",
+   "action",
+   "horror"
+  ]
+ },
+ {
+  "id": "tt0457430",
+  "name": "Pan's Labyrinth",
+  "year": 2006,
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "War"
+  ],
+  "countries": [
+   "Mexico",
+   "Spain"
+  ],
+  "directors": [
+   "Guillermo del Toro"
+  ],
+  "tags": [
+   "spain",
+   "fantasy",
+   "war",
+   "dark",
+   "fairy-tale",
+   "childhood"
+  ]
+ },
+ {
+  "id": "tt0317248",
+  "name": "City of God",
+  "year": 2002,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "Brazil"
+  ],
+  "directors": [
+   "Kátia Lund",
+   "Fernando Meirelles"
+  ],
+  "tags": [
+   "brazil",
+   "gangster",
+   "youth",
+   "violent",
+   "based-on-true-story"
+  ]
+ },
+ {
+  "id": "tt0245712",
+  "name": "Amores Perros",
+  "year": 2000,
+  "genres": [
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "Mexico"
+  ],
+  "directors": [
+   "Alejandro G. Iñárritu"
+  ],
+  "tags": [
+   "mexico",
+   "dogs",
+   "nonlinear",
+   "gritty",
+   "interconnected"
+  ]
+ },
+ {
+  "id": "tt0095765",
+  "name": "Cinema Paradiso",
+  "year": 1988,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "Italy",
+   "France"
+  ],
+  "directors": [
+   "Giuseppe Tornatore"
+  ],
+  "tags": [
+   "italy",
+   "nostalgic",
+   "cinema",
+   "childhood",
+   "bittersweet",
+   "village"
+  ]
+ },
+ {
+  "id": "tt0046250",
+  "name": "Roman Holiday",
+  "year": 1953,
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "William Wyler"
+  ],
+  "tags": [
+   "rome",
+   "romance",
+   "feel-good",
+   "black-and-white",
+   "road-trip"
+  ]
+ },
+ {
+  "id": "tt0053779",
+  "name": "La Dolce Vita",
+  "year": 1960,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "Italy",
+   "France"
+  ],
+  "directors": [
+   "Federico Fellini"
+  ],
+  "tags": [
+   "rome",
+   "black-and-white",
+   "decadence",
+   "journalism",
+   "episodic"
+  ]
+ },
+ {
+  "id": "tt0040522",
+  "name": "Bicycle Thieves",
+  "year": 1948,
+  "genres": [
+   "Drama"
+  ],
+  "countries": [
+   "Italy"
+  ],
+  "directors": [
+   "Vittorio De Sica"
+  ],
+  "tags": [
+   "rome",
+   "neorealism",
+   "poverty",
+   "father-son",
+   "black-and-white"
+  ]
+ },
+ {
+  "id": "tt0060196",
+  "name": "The Good, the Bad and the Ugly",
+  "year": 1966,
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Western"
+  ],
+  "countries": [
+   "Italy",
+   "Spain",
+   "West Germany",
+   "United States"
+  ],
+  "directors": [
+   "Sergio Leone"
+  ],
+  "tags": [
+   "western",
+   "wild-west",
+   "epic",
+   "treasure",
+   "civil-war"
+  ]
+ },
+ {
+  "id": "tt0064116",
+  "name": "Once Upon a Time in the West",
+  "year": 1968,
+  "genres": [
+   "Drama",
+   "Western"
+  ],
+  "countries": [
+   "Italy",
+   "United States"
+  ],
+  "directors": [
+   "Sergio Leone"
+  ],
+  "tags": [
+   "western",
+   "wild-west",
+   "revenge",
+   "epic",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt0105695",
+  "name": "Unforgiven",
+  "year": 1992,
+  "genres": [
+   "Drama",
+   "Western"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Clint Eastwood"
+  ],
+  "tags": [
+   "western",
+   "wild-west",
+   "revenge",
+   "ageing",
+   "dark"
+  ]
+ },
+ {
+  "id": "tt0477348",
+  "name": "No Country for Old Men",
+  "year": 2007,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Ethan Coen",
+   "Joel Coen"
+  ],
+  "tags": [
+   "texas",
+   "slow-burn",
+   "hitman",
+   "violent",
+   "bleak",
+   "neo-western"
+  ]
+ },
+ {
+  "id": "tt0469494",
+  "name": "There Will Be Blood",
+  "year": 2007,
+  "genres": [
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Paul Thomas Anderson"
+  ],
+  "tags": [
+   "oil",
+   "greed",
+   "epic",
+   "california",
+   "character-study"
+  ]
+ },
+ {
+  "id": "tt0116282",
+  "name": "Fargo",
+  "year": 1996,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Joel Coen",
+   "Ethan Coen"
+  ],
+  "tags": [
+   "snow",
+   "minnesota",
+   "crime",
+   "dark-comedy",
+   "police",
+   "kidnapping"
+  ]
+ },
+ {
+  "id": "tt0118715",
+  "name": "The Big Lebowski",
+  "year": 1998,
+  "genres": [
+   "Comedy",
+   "Crime"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Joel Coen",
+   "Ethan Coen"
+  ],
+  "tags": [
+   "los-angeles",
+   "stoner",
+   "comedy",
+   "cult",
+   "bowling",
+   "mistaken-identity"
+  ]
+ },
+ {
+  "id": "tt0110912",
+  "name": "Pulp Fiction",
+  "year": 1994,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Quentin Tarantino"
+  ],
+  "tags": [
+   "los-angeles",
+   "gangster",
+   "nonlinear",
+   "cool",
+   "talky",
+   "violent"
+  ]
+ },
+ {
+  "id": "tt0113277",
+  "name": "Heat",
+  "year": 1995,
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Michael Mann"
+  ],
+  "tags": [
+   "los-angeles",
+   "heist",
+   "police",
+   "epic",
+   "shootout"
+  ]
+ },
+ {
+  "id": "tt0780504",
+  "name": "Drive",
+  "year": 2011,
+  "genres": [
+   "Action",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Nicolas Winding Refn"
+  ],
+  "tags": [
+   "los-angeles",
+   "neo-noir",
+   "getaway-driver",
+   "cool",
+   "violent",
+   "synth"
+  ]
+ },
+ {
+  "id": "tt0369339",
+  "name": "Collateral",
+  "year": 2004,
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Michael Mann"
+  ],
+  "tags": [
+   "los-angeles",
+   "hitman",
+   "taxi",
+   "night",
+   "real-time"
+  ]
+ },
+ {
+  "id": "tt0166924",
+  "name": "Mulholland Drive",
+  "year": 2001,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "France",
+   "United States"
+  ],
+  "directors": [
+   "David Lynch"
+  ],
+  "tags": [
+   "los-angeles",
+   "hollywood",
+   "surreal",
+   "mystery",
+   "dreamlike",
+   "mind-bending"
+  ]
+ },
+ {
+  "id": "tt0083658",
+  "name": "Blade Runner",
+  "year": 1982,
+  "genres": [
+   "Action",
+   "Drama",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States",
+   "United Kingdom",
+   "Hong Kong"
+  ],
+  "directors": [
+   "Ridley Scott"
+  ],
+  "tags": [
+   "los-angeles",
+   "cyberpunk",
+   "ai",
+   "noir",
+   "dystopia",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0119488",
+  "name": "L.A. Confidential",
+  "year": 1997,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Curtis Hanson"
+  ],
+  "tags": [
+   "los-angeles",
+   "police",
+   "corruption",
+   "noir",
+   "period"
+  ]
+ },
+ {
+  "id": "tt0114369",
+  "name": "Seven",
+  "aka": [
+   "Se7en"
+  ],
+  "year": 1995,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "David Fincher"
+  ],
+  "tags": [
+   "serial-killer",
+   "detective",
+   "dark",
+   "rain",
+   "twist",
+   "bleak"
+  ]
+ },
+ {
+  "id": "tt0443706",
+  "name": "Zodiac",
+  "year": 2007,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "David Fincher"
+  ],
+  "tags": [
+   "san-francisco",
+   "serial-killer",
+   "journalism",
+   "obsession",
+   "slow-burn",
+   "based-on-true-story"
+  ]
+ },
+ {
+  "id": "tt0102926",
+  "name": "The Silence of the Lambs",
+  "year": 1991,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Horror"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Jonathan Demme"
+  ],
+  "tags": [
+   "serial-killer",
+   "fbi",
+   "psychological",
+   "horror",
+   "tense"
+  ]
+ },
+ {
+  "id": "tt1392214",
+  "name": "Prisoners",
+  "year": 2013,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Denis Villeneuve"
+  ],
+  "tags": [
+   "kidnapping",
+   "slow-burn",
+   "dark",
+   "detective",
+   "small-town",
+   "moral"
+  ]
+ },
+ {
+  "id": "tt2267998",
+  "name": "Gone Girl",
+  "year": 2014,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "David Fincher"
+  ],
+  "tags": [
+   "marriage",
+   "twist",
+   "missouri",
+   "media",
+   "dark"
+  ]
+ },
+ {
+  "id": "tt0209144",
+  "name": "Memento",
+  "year": 2000,
+  "genres": [
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "tags": [
+   "amnesia",
+   "nonlinear",
+   "mind-bending",
+   "revenge",
+   "noir"
+  ]
+ },
+ {
+  "id": "tt1375666",
+  "name": "Inception",
+  "year": 2010,
+  "genres": [
+   "Adventure",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "tags": [
+   "dreams",
+   "heist",
+   "mind-bending",
+   "epic",
+   "action"
+  ]
+ },
+ {
+  "id": "tt0816692",
+  "name": "Interstellar",
+  "year": 2014,
+  "genres": [
+   "Adventure",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States",
+   "United Kingdom",
+   "Canada"
+  ],
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "tags": [
+   "space",
+   "time",
+   "father-daughter",
+   "epic",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0062622",
+  "name": "2001: A Space Odyssey",
+  "year": 1968,
+  "genres": [
+   "Adventure",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "tags": [
+   "space",
+   "ai",
+   "philosophical",
+   "slow-burn",
+   "epic",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt2543164",
+  "name": "Arrival",
+  "year": 2016,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "Canada",
+   "United States"
+  ],
+  "directors": [
+   "Denis Villeneuve"
+  ],
+  "tags": [
+   "aliens",
+   "language",
+   "grief",
+   "slow-burn",
+   "sci-fi",
+   "mind-bending"
+  ]
+ },
+ {
+  "id": "tt0470752",
+  "name": "Ex Machina",
+  "year": 2014,
+  "genres": [
+   "Drama",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Alex Garland"
+  ],
+  "tags": [
+   "ai",
+   "robot",
+   "one-location",
+   "tense",
+   "philosophical",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt1798709",
+  "name": "Her",
+  "year": 2013,
+  "genres": [
+   "Drama",
+   "Romance",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Spike Jonze"
+  ],
+  "tags": [
+   "ai",
+   "romance",
+   "loneliness",
+   "los-angeles",
+   "near-future",
+   "bittersweet"
+  ]
+ },
+ {
+  "id": "tt0206634",
+  "name": "Children of Men",
+  "year": 2006,
+  "genres": [
+   "Drama",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "countries": [
+   "United States",
+   "United Kingdom",
+   "Japan"
+  ],
+  "directors": [
+   "Alfonso Cuarón"
+  ],
+  "tags": [
+   "dystopia",
+   "london",
+   "chase",
+   "bleak",
+   "near-future",
+   "war"
+  ]
+ },
+ {
+  "id": "tt1182345",
+  "name": "Moon",
+  "year": 2009,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Duncan Jones"
+  ],
+  "tags": [
+   "space",
+   "isolation",
+   "clone",
+   "slow-burn",
+   "twist",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0390384",
+  "name": "Primer",
+  "year": 2004,
+  "genres": [
+   "Drama",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Shane Carruth"
+  ],
+  "tags": [
+   "time-travel",
+   "mind-bending",
+   "low-budget",
+   "garage",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0088763",
+  "name": "Back to the Future",
+  "year": 1985,
+  "genres": [
+   "Adventure",
+   "Comedy",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Robert Zemeckis"
+  ],
+  "tags": [
+   "time-travel",
+   "feel-good",
+   "small-town",
+   "adventure",
+   "1950s",
+   "comedy"
+  ]
+ },
+ {
+  "id": "tt0133093",
+  "name": "The Matrix",
+  "year": 1999,
+  "genres": [
+   "Action",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Lana Wachowski",
+   "Lilly Wachowski"
+  ],
+  "tags": [
+   "simulation",
+   "cyberpunk",
+   "action",
+   "mind-bending",
+   "ai",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt1392190",
+  "name": "Mad Max: Fury Road",
+  "year": 2015,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "Australia",
+   "United States"
+  ],
+  "directors": [
+   "George Miller"
+  ],
+  "tags": [
+   "desert",
+   "post-apocalyptic",
+   "car-chase",
+   "action",
+   "dystopia"
+  ]
+ },
+ {
+  "id": "tt1160419",
+  "name": "Dune",
+  "year": 2021,
+  "genres": [
+   "Action",
+   "Adventure",
+   "Drama"
+  ],
+  "countries": [
+   "Canada",
+   "United States"
+  ],
+  "directors": [
+   "Denis Villeneuve"
+  ],
+  "tags": [
+   "desert",
+   "space",
+   "epic",
+   "politics",
+   "prophecy",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0056172",
+  "name": "Lawrence of Arabia",
+  "year": 1962,
+  "genres": [
+   "Adventure",
+   "Biography",
+   "Drama"
+  ],
+  "countries": [
+   "United Kingdom"
+  ],
+  "directors": [
+   "David Lean"
+  ],
+  "tags": [
+   "desert",
+   "epic",
+   "war",
+   "adventure",
+   "based-on-true-story"
+  ]
+ },
+ {
+  "id": "tt0087884",
+  "name": "Paris, Texas",
+  "year": 1984,
+  "genres": [
+   "Drama"
+  ],
+  "countries": [
+   "West Germany",
+   "France",
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Wim Wenders"
+  ],
+  "tags": [
+   "texas",
+   "road-trip",
+   "family",
+   "loneliness",
+   "slow-burn",
+   "desert"
+  ]
+ },
+ {
+  "id": "tt0103074",
+  "name": "Thelma & Louise",
+  "year": 1991,
+  "genres": [
+   "Adventure",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States",
+   "United Kingdom",
+   "France"
+  ],
+  "directors": [
+   "Ridley Scott"
+  ],
+  "tags": [
+   "road-trip",
+   "friendship",
+   "women",
+   "crime",
+   "lovers-on-the-run"
+  ]
+ },
+ {
+  "id": "tt0449059",
+  "name": "Little Miss Sunshine",
+  "year": 2006,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Jonathan Dayton",
+   "Valerie Faris"
+  ],
+  "tags": [
+   "road-trip",
+   "family",
+   "feel-good",
+   "quirky",
+   "comedy"
+  ]
+ },
+ {
+  "id": "tt0758758",
+  "name": "Into the Wild",
+  "year": 2007,
+  "genres": [
+   "Adventure",
+   "Biography",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Sean Penn"
+  ],
+  "tags": [
+   "nature",
+   "road-trip",
+   "alaska",
+   "based-on-true-story",
+   "freedom"
+  ]
+ },
+ {
+  "id": "tt0081505",
+  "name": "The Shining",
+  "year": 1980,
+  "genres": [
+   "Drama",
+   "Horror"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "tags": [
+   "hotel",
+   "snow",
+   "isolation",
+   "horror",
+   "madness",
+   "ghosts"
+  ]
+ },
+ {
+  "id": "tt0084787",
+  "name": "The Thing",
+  "year": 1982,
+  "genres": [
+   "Horror",
+   "Mystery",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "John Carpenter"
+  ],
+  "tags": [
+   "snow",
+   "antarctica",
+   "paranoia",
+   "monster",
+   "isolation",
+   "horror"
+  ]
+ },
+ {
+  "id": "tt7784604",
+  "name": "Hereditary",
+  "year": 2018,
+  "genres": [
+   "Drama",
+   "Horror",
+   "Mystery"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Ari Aster"
+  ],
+  "tags": [
+   "grief",
+   "family",
+   "horror",
+   "occult",
+   "dark",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt5052448",
+  "name": "Get Out",
+  "year": 2017,
+  "genres": [
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States",
+   "Japan"
+  ],
+  "directors": [
+   "Jordan Peele"
+  ],
+  "tags": [
+   "horror",
+   "satire",
+   "race",
+   "twist",
+   "suburbs"
+  ]
+ },
+ {
+  "id": "tt4263482",
+  "name": "The Witch",
+  "year": 2015,
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Horror"
+  ],
+  "countries": [
+   "United Kingdom",
+   "Canada",
+   "United States"
+  ],
+  "directors": [
+   "Robert Eggers"
+  ],
+  "tags": [
+   "witch",
+   "period",
+   "new-england",
+   "slow-burn",
+   "folk-horror",
+   "religion"
+  ]
+ },
+ {
+  "id": "tt8772262",
+  "name": "Midsommar",
+  "year": 2019,
+  "genres": [
+   "Drama",
+   "Horror",
+   "Mystery"
+  ],
+  "countries": [
+   "United States",
+   "Sweden"
+  ],
+  "directors": [
+   "Ari Aster"
+  ],
+  "tags": [
+   "sweden",
+   "folk-horror",
+   "grief",
+   "daylight",
+   "cult",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt3235888",
+  "name": "It Follows",
+  "year": 2014,
+  "genres": [
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "David Robert Mitchell"
+  ],
+  "tags": [
+   "horror",
+   "detroit",
+   "curse",
+   "suburbs",
+   "synth",
+   "teen"
+  ]
+ },
+ {
+  "id": "tt2321549",
+  "name": "The Babadook",
+  "year": 2014,
+  "genres": [
+   "Drama",
+   "Horror",
+   "Mystery"
+  ],
+  "countries": [
+   "Australia",
+   "Canada"
+  ],
+  "directors": [
+   "Jennifer Kent"
+  ],
+  "tags": [
+   "grief",
+   "horror",
+   "motherhood",
+   "monster",
+   "australia"
+  ]
+ },
+ {
+  "id": "tt0063522",
+  "name": "Rosemary's Baby",
+  "year": 1968,
+  "genres": [
+   "Drama",
+   "Horror"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Roman Polanski"
+  ],
+  "tags": [
+   "new-york",
+   "paranoia",
+   "horror",
+   "pregnancy",
+   "occult",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt0070917",
+  "name": "The Wicker Man",
+  "year": 1973,
+  "genres": [
+   "Horror",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United Kingdom"
+  ],
+  "directors": [
+   "Robin Hardy"
+  ],
+  "tags": [
+   "scotland",
+   "folk-horror",
+   "island",
+   "cult",
+   "mystery"
+  ]
+ },
+ {
+  "id": "tt1139797",
+  "name": "Let the Right One In",
+  "year": 2008,
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Horror"
+  ],
+  "countries": [
+   "Sweden",
+   "Norway",
+   "France"
+  ],
+  "directors": [
+   "Tomas Alfredson"
+  ],
+  "tags": [
+   "sweden",
+   "vampire",
+   "snow",
+   "childhood",
+   "horror",
+   "romance"
+  ]
+ },
+ {
+  "id": "tt2278388",
+  "name": "The Grand Budapest Hotel",
+  "year": 2014,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "United States",
+   "Germany"
+  ],
+  "directors": [
+   "Wes Anderson"
+  ],
+  "tags": [
+   "hotel",
+   "quirky",
+   "europe",
+   "comedy",
+   "caper",
+   "colorful"
+  ]
+ },
+ {
+  "id": "tt0432283",
+  "name": "Fantastic Mr. Fox",
+  "year": 2009,
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Comedy"
+  ],
+  "countries": [
+   "United States",
+   "United Kingdom"
+  ],
+  "directors": [
+   "Wes Anderson"
+  ],
+  "tags": [
+   "animation",
+   "heist",
+   "quirky",
+   "family",
+   "comedy"
+  ]
+ },
+ {
+  "id": "tt1748122",
+  "name": "Moonrise Kingdom",
+  "year": 2012,
+  "genres": [
+   "Adventure",
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Wes Anderson"
+  ],
+  "tags": [
+   "quirky",
+   "first-love",
+   "island",
+   "coming-of-age",
+   "1960s"
+  ]
+ },
+ {
+  "id": "tt0107048",
+  "name": "Groundhog Day",
+  "year": 1993,
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Fantasy"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Harold Ramis"
+  ],
+  "tags": [
+   "time-loop",
+   "comedy",
+   "small-town",
+   "snow",
+   "feel-good",
+   "romance"
+  ]
+ },
+ {
+  "id": "tt0120382",
+  "name": "The Truman Show",
+  "year": 1998,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Peter Weir"
+  ],
+  "tags": [
+   "television",
+   "simulation",
+   "satire",
+   "feel-good",
+   "island"
+  ]
+ },
+ {
+  "id": "tt0338013",
+  "name": "Eternal Sunshine of the Spotless Mind",
+  "year": 2004,
+  "genres": [
+   "Drama",
+   "Romance",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Michel Gondry"
+  ],
+  "tags": [
+   "memory",
+   "romance",
+   "mind-bending",
+   "bittersweet",
+   "quirky"
+  ]
+ },
+ {
+  "id": "tt0053291",
+  "name": "Some Like It Hot",
+  "year": 1959,
+  "genres": [
+   "Comedy",
+   "Music",
+   "Romance"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Billy Wilder"
+  ],
+  "tags": [
+   "comedy",
+   "crossdressing",
+   "gangster",
+   "black-and-white",
+   "music"
+  ]
+ },
+ {
+  "id": "tt0057012",
+  "name": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+  "aka": [
+   "Dr. Strangelove"
+  ],
+  "year": 1964,
+  "genres": [
+   "Comedy",
+   "War"
+  ],
+  "countries": [
+   "United Kingdom"
+  ],
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "tags": [
+   "satire",
+   "nuclear",
+   "war",
+   "black-and-white",
+   "comedy"
+  ]
+ },
+ {
+  "id": "tt0071853",
+  "name": "Monty Python and the Holy Grail",
+  "year": 1975,
+  "genres": [
+   "Adventure",
+   "Comedy",
+   "Fantasy"
+  ],
+  "countries": [
+   "United Kingdom"
+  ],
+  "directors": [
+   "Terry Gilliam",
+   "Terry Jones"
+  ],
+  "tags": [
+   "comedy",
+   "absurd",
+   "medieval",
+   "british",
+   "cult"
+  ]
+ },
+ {
+  "id": "tt0080339",
+  "name": "Airplane!",
+  "year": 1980,
+  "genres": [
+   "Comedy"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Jim Abrahams",
+   "David Zucker",
+   "Jerry Zucker"
+  ],
+  "tags": [
+   "comedy",
+   "spoof",
+   "plane",
+   "absurd"
+  ]
+ },
+ {
+  "id": "tt0425112",
+  "name": "Hot Fuzz",
+  "year": 2007,
+  "genres": [
+   "Action",
+   "Comedy",
+   "Mystery"
+  ],
+  "countries": [
+   "United Kingdom",
+   "France",
+   "United States"
+  ],
+  "directors": [
+   "Edgar Wright"
+  ],
+  "tags": [
+   "comedy",
+   "police",
+   "small-town",
+   "british",
+   "action"
+  ]
+ },
+ {
+  "id": "tt0365748",
+  "name": "Shaun of the Dead",
+  "year": 2004,
+  "genres": [
+   "Comedy",
+   "Horror"
+  ],
+  "countries": [
+   "United Kingdom",
+   "France",
+   "United States"
+  ],
+  "directors": [
+   "Edgar Wright"
+  ],
+  "tags": [
+   "zombies",
+   "comedy",
+   "london",
+   "british",
+   "friendship"
+  ]
+ },
+ {
+  "id": "tt0117951",
+  "name": "Trainspotting",
+  "year": 1996,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United Kingdom"
+  ],
+  "directors": [
+   "Danny Boyle"
+  ],
+  "tags": [
+   "scotland",
+   "drugs",
+   "youth",
+   "dark-comedy",
+   "gritty"
+  ]
+ },
+ {
+  "id": "tt0208092",
+  "name": "Snatch",
+  "year": 2000,
+  "genres": [
+   "Comedy",
+   "Crime"
+  ],
+  "countries": [
+   "United Kingdom",
+   "United States"
+  ],
+  "directors": [
+   "Guy Ritchie"
+  ],
+  "tags": [
+   "london",
+   "gangster",
+   "comedy",
+   "heist",
+   "boxing"
+  ]
+ },
+ {
+  "id": "tt0407887",
+  "name": "The Departed",
+  "year": 2006,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United States",
+   "Hong Kong"
+  ],
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "tags": [
+   "boston",
+   "police",
+   "gangster",
+   "undercover",
+   "twist"
+  ]
+ },
+ {
+  "id": "tt0099685",
+  "name": "GoodFellas",
+  "year": 1990,
+  "genres": [
+   "Biography",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "tags": [
+   "gangster",
+   "new-york",
+   "crime",
+   "based-on-true-story",
+   "violent"
+  ]
+ },
+ {
+  "id": "tt0112641",
+  "name": "Casino",
+  "year": 1995,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States",
+   "France"
+  ],
+  "directors": [
+   "Martin Scorsese"
+  ],
+  "tags": [
+   "las-vegas",
+   "gangster",
+   "gambling",
+   "epic",
+   "crime"
+  ]
+ },
+ {
+  "id": "tt0240772",
+  "name": "Ocean's Eleven",
+  "year": 2001,
+  "genres": [
+   "Crime",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Steven Soderbergh"
+  ],
+  "tags": [
+   "las-vegas",
+   "heist",
+   "caper",
+   "fun",
+   "cool"
+  ]
+ },
+ {
+  "id": "tt0070735",
+  "name": "The Sting",
+  "year": 1973,
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "George Roy Hill"
+  ],
+  "tags": [
+   "con-artist",
+   "caper",
+   "chicago",
+   "fun",
+   "1930s"
+  ]
+ },
+ {
+  "id": "tt0264464",
+  "name": "Catch Me If You Can",
+  "year": 2002,
+  "genres": [
+   "Biography",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States",
+   "Canada"
+  ],
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "tags": [
+   "con-artist",
+   "chase",
+   "based-on-true-story",
+   "fun",
+   "1960s"
+  ]
+ },
+ {
+  "id": "tt0114814",
+  "name": "The Usual Suspects",
+  "year": 1995,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "United States",
+   "Germany"
+  ],
+  "directors": [
+   "Bryan Singer"
+  ],
+  "tags": [
+   "twist",
+   "crime",
+   "heist",
+   "unreliable-narrator",
+   "mystery"
+  ]
+ },
+ {
+  "id": "tt8946378",
+  "name": "Knives Out",
+  "year": 2019,
+  "genres": [
+   "Comedy",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Rian Johnson"
+  ],
+  "tags": [
+   "whodunit",
+   "mystery",
+   "family",
+   "comedy",
+   "mansion"
+  ]
+ },
+ {
+  "id": "tt0071877",
+  "name": "Murder on the Orient Express",
+  "year": 1974,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "United Kingdom"
+  ],
+  "directors": [
+   "Sidney Lumet"
+  ],
+  "tags": [
+   "whodunit",
+   "train",
+   "detective",
+   "mystery",
+   "snow"
+  ]
+ },
+ {
+  "id": "tt0119177",
+  "name": "Gattaca",
+  "year": 1997,
+  "genres": [
+   "Drama",
+   "Sci-Fi",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Andrew Niccol"
+  ],
+  "tags": [
+   "dystopia",
+   "genetics",
+   "space",
+   "near-future",
+   "sci-fi"
+  ]
+ },
+ {
+  "id": "tt0111161",
+  "name": "The Shawshank Redemption",
+  "year": 1994,
+  "genres": [
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Frank Darabont"
+  ],
+  "tags": [
+   "prison",
+   "friendship",
+   "hope",
+   "escape",
+   "feel-good"
+  ]
+ },
+ {
+  "id": "tt0079116",
+  "name": "Escape from Alcatraz",
+  "year": 1979,
+  "genres": [
+   "Biography",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Don Siegel"
+  ],
+  "tags": [
+   "prison",
+   "escape",
+   "based-on-true-story",
+   "tense",
+   "island"
+  ]
+ },
+ {
+  "id": "tt1235166",
+  "name": "A Prophet",
+  "year": 2009,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "France",
+   "Italy"
+  ],
+  "directors": [
+   "Jacques Audiard"
+  ],
+  "tags": [
+   "prison",
+   "gangster",
+   "france",
+   "gritty",
+   "crime"
+  ]
+ },
+ {
+  "id": "tt0058946",
+  "name": "The Battle of Algiers",
+  "year": 1966,
+  "genres": [
+   "Drama",
+   "War"
+  ],
+  "countries": [
+   "Italy",
+   "Algeria"
+  ],
+  "directors": [
+   "Gillo Pontecorvo"
+  ],
+  "tags": [
+   "war",
+   "algeria",
+   "political",
+   "black-and-white",
+   "based-on-true-story"
+  ]
+ },
+ {
+  "id": "tt0050825",
+  "name": "Paths of Glory",
+  "year": 1957,
+  "genres": [
+   "Drama",
+   "War"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Stanley Kubrick"
+  ],
+  "tags": [
+   "war",
+   "ww1",
+   "france",
+   "courtroom",
+   "black-and-white"
+  ]
+ },
+ {
+  "id": "tt0120815",
+  "name": "Saving Private Ryan",
+  "year": 1998,
+  "genres": [
+   "Drama",
+   "War"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "tags": [
+   "war",
+   "ww2",
+   "normandy",
+   "epic",
+   "action"
+  ]
+ },
+ {
+  "id": "tt0082096",
+  "name": "Das Boot",
+  "year": 1981,
+  "genres": [
+   "Drama",
+   "War"
+  ],
+  "countries": [
+   "West Germany"
+  ],
+  "directors": [
+   "Wolfgang Petersen"
+  ],
+  "tags": [
+   "war",
+   "ww2",
+   "submarine",
+   "claustrophobic",
+   "tense",
+   "germany"
+  ]
+ },
+ {
+  "id": "tt0091251",
+  "name": "Come and See",
+  "year": 1985,
+  "genres": [
+   "Drama",
+   "Thriller",
+   "War"
+  ],
+  "countries": [
+   "Soviet Union"
+  ],
+  "directors": [
+   "Elem Klimov"
+  ],
+  "tags": [
+   "war",
+   "ww2",
+   "belarus",
+   "harrowing",
+   "bleak"
+  ]
+ },
+ {
+  "id": "tt5013056",
+  "name": "Dunkirk",
+  "year": 2017,
+  "genres": [
+   "Action",
+   "Drama",
+   "History"
+  ],
+  "countries": [
+   "Netherlands",
+   "United Kingdom",
+   "France",
+   "United States"
+  ],
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "tags": [
+   "war",
+   "ww2",
+   "beach",
+   "survival",
+   "tense"
+  ]
+ },
+ {
+  "id": "tt0050083",
+  "name": "12 Angry Men",
+  "year": 1957,
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Sidney Lumet"
+  ],
+  "tags": [
+   "courtroom",
+   "one-location",
+   "black-and-white",
+   "jury",
+   "talky"
+  ]
+ },
+ {
+  "id": "tt17009710",
+  "name": "Anatomy of a Fall",
+  "year": 2023,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Mystery"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Justine Triet"
+  ],
+  "tags": [
+   "courtroom",
+   "marriage",
+   "mystery",
+   "france",
+   "snow",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt8613070",
+  "name": "Portrait of a Lady on Fire",
+  "year": 2019,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Céline Sciamma"
+  ],
+  "tags": [
+   "romance",
+   "period",
+   "france",
+   "island",
+   "art",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt2582802",
+  "name": "Whiplash",
+  "year": 2014,
+  "genres": [
+   "Drama",
+   "Music"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Damien Chazelle"
+  ],
+  "tags": [
+   "music",
+   "jazz",
+   "obsession",
+   "drumming",
+   "tense"
+  ]
+ },
+ {
+  "id": "tt3783958",
+  "name": "La La Land",
+  "year": 2016,
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Music"
+  ],
+  "countries": [
+   "United States",
+   "Hong Kong"
+  ],
+  "directors": [
+   "Damien Chazelle"
+  ],
+  "tags": [
+   "musical",
+   "los-angeles",
+   "romance",
+   "jazz",
+   "bittersweet"
+  ]
+ },
+ {
+  "id": "tt0045152",
+  "name": "Singin' in the Rain",
+  "year": 1952,
+  "genres": [
+   "Comedy",
+   "Musical",
+   "Romance"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Stanley Donen",
+   "Gene Kelly"
+  ],
+  "tags": [
+   "musical",
+   "hollywood",
+   "feel-good",
+   "comedy",
+   "dance"
+  ]
+ },
+ {
+  "id": "tt0059742",
+  "name": "The Sound of Music",
+  "year": 1965,
+  "genres": [
+   "Biography",
+   "Drama",
+   "Family"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Robert Wise"
+  ],
+  "tags": [
+   "musical",
+   "austria",
+   "family",
+   "feel-good",
+   "ww2"
+  ]
+ },
+ {
+  "id": "tt0086879",
+  "name": "Amadeus",
+  "year": 1984,
+  "genres": [
+   "Biography",
+   "Drama",
+   "Music"
+  ],
+  "countries": [
+   "United States",
+   "France"
+  ],
+  "directors": [
+   "Miloš Forman"
+  ],
+  "tags": [
+   "music",
+   "vienna",
+   "rivalry",
+   "period",
+   "epic"
+  ]
+ },
+ {
+  "id": "tt0112471",
+  "name": "Before Sunrise",
+  "year": 1995,
+  "genres": [
+   "Comedy",
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "United States",
+   "Austria"
+  ],
+  "directors": [
+   "Richard Linklater"
+  ],
+  "tags": [
+   "vienna",
+   "romance",
+   "talky",
+   "real-time",
+   "train"
+  ]
+ },
+ {
+  "id": "tt5726616",
+  "name": "Call Me by Your Name",
+  "year": 2017,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "Brazil",
+   "France",
+   "Italy",
+   "United States"
+  ],
+  "directors": [
+   "Luca Guadagnino"
+  ],
+  "tags": [
+   "italy",
+   "summer",
+   "first-love",
+   "coming-of-age",
+   "lgbt"
+  ]
+ },
+ {
+  "id": "tt4975722",
+  "name": "Moonlight",
+  "year": 2016,
+  "genres": [
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Barry Jenkins"
+  ],
+  "tags": [
+   "miami",
+   "coming-of-age",
+   "lgbt",
+   "poverty",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt1065073",
+  "name": "Boyhood",
+  "year": 2014,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Richard Linklater"
+  ],
+  "tags": [
+   "coming-of-age",
+   "texas",
+   "family",
+   "realistic"
+  ]
+ },
+ {
+  "id": "tt4925292",
+  "name": "Lady Bird",
+  "year": 2017,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Greta Gerwig"
+  ],
+  "tags": [
+   "coming-of-age",
+   "sacramento",
+   "mother-daughter",
+   "high-school",
+   "comedy"
+  ]
+ },
+ {
+  "id": "tt0092005",
+  "name": "Stand by Me",
+  "year": 1986,
+  "genres": [
+   "Adventure",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Rob Reiner"
+  ],
+  "tags": [
+   "coming-of-age",
+   "friendship",
+   "summer",
+   "small-town",
+   "1950s"
+  ]
+ },
+ {
+  "id": "tt0088847",
+  "name": "The Breakfast Club",
+  "year": 1985,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "John Hughes"
+  ],
+  "tags": [
+   "high-school",
+   "teen",
+   "one-location",
+   "comedy",
+   "friendship"
+  ]
+ },
+ {
+  "id": "tt0106677",
+  "name": "Dazed and Confused",
+  "year": 1993,
+  "genres": [
+   "Comedy"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Richard Linklater"
+  ],
+  "tags": [
+   "high-school",
+   "1970s",
+   "teen",
+   "summer",
+   "nostalgic"
+  ]
+ },
+ {
+  "id": "tt0829482",
+  "name": "Superbad",
+  "year": 2007,
+  "genres": [
+   "Comedy"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Greg Mottola"
+  ],
+  "tags": [
+   "high-school",
+   "teen",
+   "comedy",
+   "friendship",
+   "party"
+  ]
+ },
+ {
+  "id": "tt0377092",
+  "name": "Mean Girls",
+  "year": 2004,
+  "genres": [
+   "Comedy"
+  ],
+  "countries": [
+   "United States",
+   "Canada"
+  ],
+  "directors": [
+   "Mark Waters"
+  ],
+  "tags": [
+   "high-school",
+   "teen",
+   "comedy",
+   "satire"
+  ]
+ },
+ {
+  "id": "tt0114709",
+  "name": "Toy Story",
+  "year": 1995,
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Comedy"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "John Lasseter"
+  ],
+  "tags": [
+   "animation",
+   "toys",
+   "friendship",
+   "family",
+   "feel-good"
+  ]
+ },
+ {
+  "id": "tt0910970",
+  "name": "WALL·E",
+  "year": 2008,
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Family"
+  ],
+  "countries": [
+   "United States",
+   "Japan"
+  ],
+  "directors": [
+   "Andrew Stanton"
+  ],
+  "tags": [
+   "animation",
+   "robot",
+   "space",
+   "romance",
+   "environment"
+  ]
+ },
+ {
+  "id": "tt1049413",
+  "name": "Up",
+  "year": 2009,
+  "genres": [
+   "Animation",
+   "Adventure",
+   "Comedy"
+  ],
+  "countries": [
+   "United States",
+   "Japan"
+  ],
+  "directors": [
+   "Pete Docter",
+   "Bob Peterson"
+  ],
+  "tags": [
+   "animation",
+   "adventure",
+   "grief",
+   "ageing",
+   "feel-good"
+  ]
+ },
+ {
+  "id": "tt4633694",
+  "name": "Spider-Man: Into the Spider-Verse",
+  "year": 2018,
+  "genres": [
+   "Animation",
+   "Action",
+   "Adventure"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Bob Persichetti",
+   "Peter Ramsey",
+   "Rodney Rothman"
+  ],
+  "tags": [
+   "animation",
+   "superhero",
+   "new-york",
+   "colorful",
+   "coming-of-age"
+  ]
+ },
+ {
+  "id": "tt0468569",
+  "name": "The Dark Knight",
+  "year": 2008,
+  "genres": [
+   "Crime",
+   "Thriller"
+  ],
+  "countries": [
+   "United States",
+   "United Kingdom"
+  ],
+  "directors": [
+   "Christopher Nolan"
+  ],
+  "tags": [
+   "superhero",
+   "gotham",
+   "crime",
+   "dark",
+   "epic"
+  ]
+ },
+ {
+  "id": "tt0082971",
+  "name": "Raiders of the Lost Ark",
+  "year": 1981,
+  "genres": [
+   "Adventure"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "tags": [
+   "adventure",
+   "treasure",
+   "nazis",
+   "action",
+   "fun"
+  ]
+ },
+ {
+  "id": "tt0107290",
+  "name": "Jurassic Park",
+  "year": 1993,
+  "genres": [
+   "Adventure",
+   "Sci-Fi"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Steven Spielberg"
+  ],
+  "tags": [
+   "dinosaurs",
+   "island",
+   "adventure",
+   "monster",
+   "family"
+  ]
+ },
+ {
+  "id": "tt0093779",
+  "name": "The Princess Bride",
+  "year": 1987,
+  "genres": [
+   "Adventure",
+   "Comedy",
+   "Family"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Rob Reiner"
+  ],
+  "tags": [
+   "fairy-tale",
+   "adventure",
+   "romance",
+   "comedy",
+   "feel-good"
+  ]
+ },
+ {
+  "id": "tt1895587",
+  "name": "Spotlight",
+  "year": 2015,
+  "genres": [
+   "Biography",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Tom McCarthy"
+  ],
+  "tags": [
+   "journalism",
+   "boston",
+   "based-on-true-story",
+   "church",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt1285016",
+  "name": "The Social Network",
+  "year": 2010,
+  "genres": [
+   "Biography",
+   "Drama"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "David Fincher"
+  ],
+  "tags": [
+   "tech",
+   "harvard",
+   "based-on-true-story",
+   "rivalry",
+   "talky"
+  ]
+ },
+ {
+  "id": "tt2872718",
+  "name": "Nightcrawler",
+  "year": 2014,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Dan Gilroy"
+  ],
+  "tags": [
+   "los-angeles",
+   "media",
+   "night",
+   "dark",
+   "character-study"
+  ]
+ },
+ {
+  "id": "tt5727208",
+  "name": "Uncut Gems",
+  "year": 2019,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Benny Safdie",
+   "Josh Safdie"
+  ],
+  "tags": [
+   "new-york",
+   "gambling",
+   "anxiety",
+   "tense",
+   "jewelry"
+  ]
+ },
+ {
+  "id": "tt4846232",
+  "name": "Good Time",
+  "year": 2017,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "United States"
+  ],
+  "directors": [
+   "Benny Safdie",
+   "Josh Safdie"
+  ],
+  "tags": [
+   "new-york",
+   "heist",
+   "night",
+   "anxiety",
+   "crime"
+  ]
+ },
+ {
+  "id": "tt5776858",
+  "name": "Phantom Thread",
+  "year": 2017,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "China",
+   "United States"
+  ],
+  "directors": [
+   "Paul Thomas Anderson"
+  ],
+  "tags": [
+   "london",
+   "fashion",
+   "romance",
+   "period",
+   "obsession"
+  ]
+ },
+ {
+  "id": "tt1340800",
+  "name": "Tinker Tailor Soldier Spy",
+  "year": 2011,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "United Kingdom",
+   "France",
+   "Germany",
+   "United States",
+   "Hungary",
+   "Turkey"
+  ],
+  "directors": [
+   "Tomas Alfredson"
+  ],
+  "tags": [
+   "spy",
+   "cold-war",
+   "london",
+   "slow-burn",
+   "mystery"
+  ]
+ },
+ {
+  "id": "tt0405094",
+  "name": "The Lives of Others",
+  "year": 2006,
+  "genres": [
+   "Drama",
+   "Mystery",
+   "Thriller"
+  ],
+  "countries": [
+   "Germany",
+   "France"
+  ],
+  "directors": [
+   "Florian Henckel von Donnersmarck"
+  ],
+  "tags": [
+   "surveillance",
+   "east-germany",
+   "cold-war",
+   "political",
+   "slow-burn"
+  ]
+ },
+ {
+  "id": "tt0130827",
+  "name": "Run Lola Run",
+  "year": 1998,
+  "genres": [
+   "Action",
+   "Crime",
+   "Thriller"
+  ],
+  "countries": [
+   "Germany"
+  ],
+  "directors": [
+   "Tom Tykwer"
+  ],
+  "tags": [
+   "berlin",
+   "time-loop",
+   "techno",
+   "real-time",
+   "heist"
+  ]
+ },
+ {
+  "id": "tt0093191",
+  "name": "Wings of Desire",
+  "year": 1987,
+  "genres": [
+   "Drama",
+   "Fantasy",
+   "Romance"
+  ],
+  "countries": [
+   "West Germany",
+   "France"
+  ],
+  "directors": [
+   "Wim Wenders"
+  ],
+  "tags": [
+   "berlin",
+   "angels",
+   "black-and-white",
+   "poetic",
+   "romance"
+  ]
+ },
+ {
+  "id": "tt0363163",
+  "name": "Downfall",
+  "year": 2004,
+  "genres": [
+   "Biography",
+   "Drama",
+   "History"
+  ],
+  "countries": [
+   "Germany",
+   "Austria",
+   "Italy"
+  ],
+  "directors": [
+   "Oliver Hirschbiegel"
+  ],
+  "tags": [
+   "ww2",
+   "berlin",
+   "based-on-true-story",
+   "war",
+   "bunker"
+  ]
+ },
+ {
+  "id": "tt0050976",
+  "name": "The Seventh Seal",
+  "year": 1957,
+  "genres": [
+   "Drama",
+   "Fantasy"
+  ],
+  "countries": [
+   "Sweden"
+  ],
+  "directors": [
+   "Ingmar Bergman"
+  ],
+  "tags": [
+   "medieval",
+   "death",
+   "philosophical",
+   "black-and-white",
+   "sweden"
+  ]
+ },
+ {
+  "id": "tt0060827",
+  "name": "Persona",
+  "year": 1966,
+  "genres": [
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "Sweden"
+  ],
+  "directors": [
+   "Ingmar Bergman"
+  ],
+  "tags": [
+   "psychological",
+   "sweden",
+   "black-and-white",
+   "identity",
+   "island"
+  ]
+ },
+ {
+  "id": "tt0108394",
+  "name": "Three Colors: Blue",
+  "aka": [
+   "Three Colours: Blue"
+  ],
+  "year": 1993,
+  "genres": [
+   "Drama",
+   "Music",
+   "Mystery"
+  ],
+  "countries": [
+   "France",
+   "Poland",
+   "Switzerland"
+  ],
+  "directors": [
+   "Krzysztof Kieslowski"
+  ],
+  "tags": [
+   "paris",
+   "grief",
+   "music",
+   "slow-burn",
+   "beautiful"
+  ]
+ },
+ {
+  "id": "tt0110413",
+  "name": "Léon: The Professional",
+  "year": 1994,
+  "genres": [
+   "Action",
+   "Crime",
+   "Drama"
+  ],
+  "countries": [
+   "France",
+   "United States"
+  ],
+  "directors": [
+   "Luc Besson"
+  ],
+  "tags": [
+   "new-york",
+   "hitman",
+   "friendship",
+   "action",
+   "childhood"
+  ]
+ },
+ {
+  "id": "tt0055032",
+  "name": "Jules and Jim",
+  "year": 1962,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "François Truffaut"
+  ],
+  "tags": [
+   "paris",
+   "new-wave",
+   "love-triangle",
+   "black-and-white",
+   "romance"
+  ]
+ },
+ {
+  "id": "tt0058450",
+  "name": "The Umbrellas of Cherbourg",
+  "year": 1964,
+  "genres": [
+   "Drama",
+   "Musical",
+   "Romance"
+  ],
+  "countries": [
+   "France",
+   "West Germany"
+  ],
+  "directors": [
+   "Jacques Demy"
+  ],
+  "tags": [
+   "musical",
+   "france",
+   "romance",
+   "colorful",
+   "bittersweet"
+  ]
+ },
+ {
+  "id": "tt0046268",
+  "name": "The Wages of Fear",
+  "year": 1953,
+  "genres": [
+   "Adventure",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "France",
+   "Italy"
+  ],
+  "directors": [
+   "Henri-Georges Clouzot"
+  ],
+  "tags": [
+   "tense",
+   "trucks",
+   "south-america",
+   "black-and-white",
+   "road-trip"
+  ]
+ },
+ {
+  "id": "tt0046911",
+  "name": "Diabolique",
+  "year": 1955,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Horror"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Henri-Georges Clouzot"
+  ],
+  "tags": [
+   "twist",
+   "murder",
+   "france",
+   "school",
+   "black-and-white",
+   "mystery"
+  ]
+ },
+ {
+  "id": "tt0057345",
+  "name": "Contempt",
+  "aka": [
+   "Le Mépris"
+  ],
+  "year": 1963,
+  "genres": [
+   "Drama",
+   "Romance"
+  ],
+  "countries": [
+   "France",
+   "Italy"
+  ],
+  "directors": [
+   "Jean-Luc Godard"
+  ],
+  "tags": [
+   "cinema",
+   "marriage",
+   "italy",
+   "new-wave",
+   "colorful"
+  ]
+ },
+ {
+  "id": "tt0101700",
+  "name": "Delicatessen",
+  "year": 1991,
+  "genres": [
+   "Comedy",
+   "Crime"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Marc Caro",
+   "Jean-Pierre Jeunet"
+  ],
+  "tags": [
+   "post-apocalyptic",
+   "dark-comedy",
+   "quirky",
+   "france",
+   "apartment"
+  ]
+ },
+ {
+  "id": "tt1675434",
+  "name": "The Intouchables",
+  "year": 2011,
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Olivier Nakache",
+   "Éric Toledano"
+  ],
+  "tags": [
+   "paris",
+   "friendship",
+   "feel-good",
+   "based-on-true-story",
+   "comedy"
+  ]
+ },
+ {
+  "id": "tt10199590",
+  "name": "Les Misérables",
+  "year": 2019,
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "countries": [
+   "France"
+  ],
+  "directors": [
+   "Ladj Ly"
+  ],
+  "tags": [
+   "paris",
+   "suburbs",
+   "police",
+   "gritty",
+   "tense"
+  ]
+ }
+]

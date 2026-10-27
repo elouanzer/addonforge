@@ -1,0 +1,204 @@
+The Day of the Jackal|1973|slow-burn,tense,paris,assassin,conspiracy,political
+Le Cercle Rouge|1970|slow-burn,paris,heist,gangster,cool,atmospheric
+The Tenant|1976|paris,paranoia,psychological,dark,surreal,apartment
+Le Samouraï|1967|slow-burn,paris,assassin,cool,minimalist,noir
+Rififi|1955|paris,heist,noir,black-and-white,tense
+Breathless|1960|paris,new-wave,romance,cool,black-and-white,crime
+Amélie|2001|paris,feel-good,quirky,romantic,whimsical,cozy
+Ratatouille|2007|paris,animation,cooking,feel-good,family
+La Haine|1995|paris,suburbs,black-and-white,gritty,youth,police
+Midnight in Paris|2011|paris,time-travel,romantic,nostalgic,writers,whimsical
+Before Sunset|2004|paris,romance,talky,real-time,bittersweet
+Frantic|1988|paris,thriller,kidnapping,tense,conspiracy
+Ronin|1998|paris,car-chase,spy,heist,action
+Caché|2005|paris,slow-burn,mystery,surveillance,psychological,dark
+The 400 Blows|1959|paris,coming-of-age,new-wave,black-and-white,childhood
+Chinatown|1974|slow-burn,los-angeles,noir,detective,conspiracy,bleak
+The Conversation|1974|slow-burn,surveillance,paranoia,san-francisco,tense,psychological
+Three Days of the Condor|1975|conspiracy,spy,new-york,paranoia,tense
+All the President's Men|1976|journalism,conspiracy,political,washington,based-on-true-story,slow-burn
+The Parallax View|1974|conspiracy,paranoia,assassin,political,slow-burn,bleak
+Klute|1971|slow-burn,new-york,detective,psychological,stalker,noir
+Don't Look Now|1973|venice,slow-burn,grief,horror,atmospheric,mystery
+Taxi Driver|1976|new-york,dark,loneliness,violent,gritty,character-study
+The French Connection|1971|new-york,police,car-chase,gritty,drugs
+Dog Day Afternoon|1975|new-york,heist,based-on-true-story,tense,real-time
+Jaws|1975|shark,sea,summer,small-town,monster,tense
+Alien|1979|space,monster,horror,tense,claustrophobic,sci-fi
+Apocalypse Now|1979|war,vietnam,jungle,epic,surreal,dark
+The Godfather|1972|gangster,family,epic,new-york,crime,classic
+Annie Hall|1977|new-york,romance,funny,neurotic,talky
+Stalker|1979|slow-burn,philosophical,soviet,mysterious,atmospheric,sci-fi
+Solaris|1972|space,slow-burn,philosophical,soviet,grief,sci-fi
+Badlands|1973|road-trip,crime,lovers-on-the-run,nature,violent
+Picnic at Hanging Rock|1975|mystery,australia,dreamlike,atmospheric,slow-burn,school
+Days of Heaven|1978|texas,farm,beautiful,romance,slow-burn
+Mean Streets|1973|new-york,gangster,gritty,friendship
+Network|1976|satire,television,media,new-york,angry
+Rocky|1976|boxing,sports,underdog,philadelphia,feel-good
+The Exorcist|1973|horror,possession,demonic,dark,religion
+Halloween|1978|slasher,horror,small-town,masked-killer,suburbs
+Suspiria|1977|horror,witch,ballet,colorful,surreal,germany
+Close Encounters of the Third Kind|1977|aliens,ufo,wonder,family,sci-fi
+Star Wars|1977|space,adventure,epic,family,space-opera,sci-fi
+Rear Window|1954|voyeurism,apartment,murder,mystery,one-location,tense
+Vertigo|1958|san-francisco,obsession,psychological,mystery,romance
+Psycho|1960|horror,motel,twist,black-and-white,serial-killer
+North by Northwest|1959|spy,chase,mistaken-identity,adventure,fun
+The Third Man|1949|vienna,noir,black-and-white,post-war,mystery
+Double Indemnity|1944|noir,insurance,femme-fatale,murder,black-and-white,los-angeles
+Casablanca|1942|romance,war,morocco,classic,black-and-white
+Sunset Boulevard|1950|hollywood,noir,black-and-white,obsession,los-angeles
+Seven Samurai|1954|samurai,japan,epic,action,black-and-white
+Rashomon|1950|japan,mystery,unreliable-narrator,black-and-white,courtroom
+Tokyo Story|1953|japan,family,slow-burn,ageing,bittersweet
+Spirited Away|2001|japan,animation,fantasy,family,whimsical,coming-of-age
+My Neighbor Totoro|1988|japan,animation,cozy,family,feel-good,countryside
+Lost in Translation|2003|tokyo,loneliness,romance,bittersweet,hotel
+Akira|1988|tokyo,animation,cyberpunk,dystopia,motorbike,sci-fi
+Ghost in the Shell|1995|animation,cyberpunk,ai,philosophical,japan,sci-fi
+In the Mood for Love|2000|hong-kong,romance,slow-burn,beautiful,longing,1960s
+Chungking Express|1994|hong-kong,romance,quirky,loneliness,cool
+Oldboy|2003|korea,revenge,twist,violent,mystery,dark
+Parasite|2019|korea,class,satire,twist,family,thriller
+Memories of Murder|2003|korea,detective,serial-killer,based-on-true-story,slow-burn,countryside
+The Handmaiden|2016|korea,twist,con-artist,romance,erotic,period
+Train to Busan|2016|korea,zombies,train,action,horror
+Pan's Labyrinth|2006|spain,fantasy,war,dark,fairy-tale,childhood
+City of God|2002|brazil,gangster,youth,violent,based-on-true-story
+Amores Perros|2000|mexico,dogs,nonlinear,gritty,interconnected
+Cinema Paradiso|1988|italy,nostalgic,cinema,childhood,bittersweet,village
+Roman Holiday|1953|rome,romance,feel-good,black-and-white,road-trip
+La Dolce Vita|1960|rome,black-and-white,decadence,journalism,episodic
+Bicycle Thieves|1948|rome,neorealism,poverty,father-son,black-and-white
+The Good, the Bad and the Ugly|1966|western,wild-west,epic,treasure,civil-war
+Once Upon a Time in the West|1968|western,wild-west,revenge,epic,slow-burn
+Unforgiven|1992|western,wild-west,revenge,ageing,dark
+No Country for Old Men|2007|texas,slow-burn,hitman,violent,bleak,neo-western
+There Will Be Blood|2007|oil,greed,epic,california,character-study
+Fargo|1996|snow,minnesota,crime,dark-comedy,police,kidnapping
+The Big Lebowski|1998|los-angeles,stoner,comedy,cult,bowling,mistaken-identity
+Pulp Fiction|1994|los-angeles,gangster,nonlinear,cool,talky,violent
+Heat|1995|los-angeles,heist,police,epic,shootout
+Drive|2011|los-angeles,neo-noir,getaway-driver,cool,violent,synth
+Collateral|2004|los-angeles,hitman,taxi,night,real-time
+Mulholland Drive|2001|los-angeles,hollywood,surreal,mystery,dreamlike,mind-bending
+Blade Runner|1982|los-angeles,cyberpunk,ai,noir,dystopia,sci-fi
+L.A. Confidential|1997|los-angeles,police,corruption,noir,period
+Se7en|1995|serial-killer,detective,dark,rain,twist,bleak
+Zodiac|2007|san-francisco,serial-killer,journalism,obsession,slow-burn,based-on-true-story
+The Silence of the Lambs|1991|serial-killer,fbi,psychological,horror,tense
+Prisoners|2013|kidnapping,slow-burn,dark,detective,small-town,moral
+Gone Girl|2014|marriage,twist,missouri,media,dark
+Memento|2000|amnesia,nonlinear,mind-bending,revenge,noir
+Inception|2010|dreams,heist,mind-bending,epic,action
+Interstellar|2014|space,time,father-daughter,epic,sci-fi
+2001: A Space Odyssey|1968|space,ai,philosophical,slow-burn,epic,sci-fi
+Arrival|2016|aliens,language,grief,slow-burn,sci-fi,mind-bending
+Ex Machina|2014|ai,robot,one-location,tense,philosophical,sci-fi
+Her|2013|ai,romance,loneliness,los-angeles,near-future,bittersweet
+Children of Men|2006|dystopia,london,chase,bleak,near-future,war
+Moon|2009|space,isolation,clone,slow-burn,twist,sci-fi
+Primer|2004|time-travel,mind-bending,low-budget,garage,sci-fi
+Back to the Future|1985|time-travel,feel-good,small-town,adventure,1950s,comedy
+The Matrix|1999|simulation,cyberpunk,action,mind-bending,ai,sci-fi
+Mad Max: Fury Road|2015|desert,post-apocalyptic,car-chase,action,dystopia
+Dune|2021|desert,space,epic,politics,prophecy,sci-fi
+Lawrence of Arabia|1962|desert,epic,war,adventure,based-on-true-story
+Paris, Texas|1984|texas,road-trip,family,loneliness,slow-burn,desert
+Thelma & Louise|1991|road-trip,friendship,women,crime,lovers-on-the-run
+Little Miss Sunshine|2006|road-trip,family,feel-good,quirky,comedy
+Into the Wild|2007|nature,road-trip,alaska,based-on-true-story,freedom
+The Shining|1980|hotel,snow,isolation,horror,madness,ghosts
+The Thing|1982|snow,antarctica,paranoia,monster,isolation,horror
+Hereditary|2018|grief,family,horror,occult,dark,slow-burn
+Get Out|2017|horror,satire,race,twist,suburbs
+The Witch|2015|witch,period,new-england,slow-burn,folk-horror,religion
+Midsommar|2019|sweden,folk-horror,grief,daylight,cult,slow-burn
+It Follows|2014|horror,detroit,curse,suburbs,synth,teen
+The Babadook|2014|grief,horror,motherhood,monster,australia
+Rosemary's Baby|1968|new-york,paranoia,horror,pregnancy,occult,slow-burn
+The Wicker Man|1973|scotland,folk-horror,island,cult,mystery
+Let the Right One In|2008|sweden,vampire,snow,childhood,horror,romance
+The Grand Budapest Hotel|2014|hotel,quirky,europe,comedy,caper,colorful
+Fantastic Mr. Fox|2009|animation,heist,quirky,family,comedy
+Moonrise Kingdom|2012|quirky,first-love,island,coming-of-age,1960s
+Groundhog Day|1993|time-loop,comedy,small-town,snow,feel-good,romance
+The Truman Show|1998|television,simulation,satire,feel-good,island
+Eternal Sunshine of the Spotless Mind|2004|memory,romance,mind-bending,bittersweet,quirky
+Some Like It Hot|1959|comedy,crossdressing,gangster,black-and-white,music
+Dr. Strangelove|1964|satire,nuclear,war,black-and-white,comedy
+Monty Python and the Holy Grail|1975|comedy,absurd,medieval,british,cult
+Airplane!|1980|comedy,spoof,plane,absurd
+Hot Fuzz|2007|comedy,police,small-town,british,action
+Shaun of the Dead|2004|zombies,comedy,london,british,friendship
+Trainspotting|1996|scotland,drugs,youth,dark-comedy,gritty
+Snatch|2000|london,gangster,comedy,heist,boxing
+The Departed|2006|boston,police,gangster,undercover,twist
+Goodfellas|1990|gangster,new-york,crime,based-on-true-story,violent
+Casino|1995|las-vegas,gangster,gambling,epic,crime
+Ocean's Eleven|2001|las-vegas,heist,caper,fun,cool
+The Sting|1973|con-artist,caper,chicago,fun,1930s
+Catch Me If You Can|2002|con-artist,chase,based-on-true-story,fun,1960s
+The Usual Suspects|1995|twist,crime,heist,unreliable-narrator,mystery
+Knives Out|2019|whodunit,mystery,family,comedy,mansion
+Murder on the Orient Express|1974|whodunit,train,detective,mystery,snow
+Gattaca|1997|dystopia,genetics,space,near-future,sci-fi
+The Shawshank Redemption|1994|prison,friendship,hope,escape,feel-good
+Escape from Alcatraz|1979|prison,escape,based-on-true-story,tense,island
+A Prophet|2009|prison,gangster,france,gritty,crime
+The Battle of Algiers|1966|war,algeria,political,black-and-white,based-on-true-story
+Paths of Glory|1957|war,ww1,france,courtroom,black-and-white
+Saving Private Ryan|1998|war,ww2,normandy,epic,action
+Das Boot|1981|war,ww2,submarine,claustrophobic,tense,germany
+Come and See|1985|war,ww2,belarus,harrowing,bleak
+Dunkirk|2017|war,ww2,beach,survival,tense
+12 Angry Men|1957|courtroom,one-location,black-and-white,jury,talky
+Anatomy of a Fall|2023|courtroom,marriage,mystery,france,snow,slow-burn
+Portrait of a Lady on Fire|2019|romance,period,france,island,art,slow-burn
+Whiplash|2014|music,jazz,obsession,drumming,tense
+La La Land|2016|musical,los-angeles,romance,jazz,bittersweet
+Singin' in the Rain|1952|musical,hollywood,feel-good,comedy,dance
+The Sound of Music|1965|musical,austria,family,feel-good,ww2
+Amadeus|1984|music,vienna,rivalry,period,epic
+Before Sunrise|1995|vienna,romance,talky,real-time,train
+Call Me by Your Name|2017|italy,summer,first-love,coming-of-age,lgbt
+Moonlight|2016|miami,coming-of-age,lgbt,poverty,slow-burn
+Boyhood|2014|coming-of-age,texas,family,realistic
+Lady Bird|2017|coming-of-age,sacramento,mother-daughter,high-school,comedy
+Stand by Me|1986|coming-of-age,friendship,summer,small-town,1950s
+The Breakfast Club|1985|high-school,teen,one-location,comedy,friendship
+Dazed and Confused|1993|high-school,1970s,teen,summer,nostalgic
+Superbad|2007|high-school,teen,comedy,friendship,party
+Mean Girls|2004|high-school,teen,comedy,satire
+Toy Story|1995|animation,toys,friendship,family,feel-good
+WALL·E|2008|animation,robot,space,romance,environment
+Up|2009|animation,adventure,grief,ageing,feel-good
+Spider-Man: Into the Spider-Verse|2018|animation,superhero,new-york,colorful,coming-of-age
+The Dark Knight|2008|superhero,gotham,crime,dark,epic
+Raiders of the Lost Ark|1981|adventure,treasure,nazis,action,fun
+Jurassic Park|1993|dinosaurs,island,adventure,monster,family
+The Princess Bride|1987|fairy-tale,adventure,romance,comedy,feel-good
+Spotlight|2015|journalism,boston,based-on-true-story,church,slow-burn
+The Social Network|2010|tech,harvard,based-on-true-story,rivalry,talky
+Nightcrawler|2014|los-angeles,media,night,dark,character-study
+Uncut Gems|2019|new-york,gambling,anxiety,tense,jewelry
+Good Time|2017|new-york,heist,night,anxiety,crime
+Phantom Thread|2017|london,fashion,romance,period,obsession
+Tinker Tailor Soldier Spy|2011|spy,cold-war,london,slow-burn,mystery
+The Lives of Others|2006|surveillance,east-germany,cold-war,political,slow-burn
+Run Lola Run|1998|berlin,time-loop,techno,real-time,heist
+Wings of Desire|1987|berlin,angels,black-and-white,poetic,romance
+Downfall|2004|ww2,berlin,based-on-true-story,war,bunker
+The Seventh Seal|1957|medieval,death,philosophical,black-and-white,sweden
+Persona|1966|psychological,sweden,black-and-white,identity,island
+Three Colours: Blue|1993|paris,grief,music,slow-burn,beautiful
+Leon: The Professional|1994|new-york,hitman,friendship,action,childhood
+Jules and Jim|1962|paris,new-wave,love-triangle,black-and-white,romance
+The Umbrellas of Cherbourg|1964|musical,france,romance,colorful,bittersweet
+Wages of Fear|1953|tense,trucks,south-america,black-and-white,road-trip
+Diabolique|1955|twist,murder,france,school,black-and-white,mystery
+Le Mépris|1963|cinema,marriage,italy,new-wave,colorful
+Delicatessen|1991|post-apocalyptic,dark-comedy,quirky,france,apartment
+The Intouchables|2011|paris,friendship,feel-good,based-on-true-story,comedy
+Les Misérables|2019|paris,suburbs,police,gritty,tense

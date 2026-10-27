@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.*
+!.env.example
+*.log
+# Your Letterboxd export is personal data: never commit it.
+data/*
+!data/.gitkeep

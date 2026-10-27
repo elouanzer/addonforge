@@ -1,0 +1,14 @@
+{
+  "name": "node-sdk-template",
+  "description": "Node SDK Template, built with Addon Forge",
+  "template": "node-sdk",
+  "resources": ["catalog"],
+  "types": ["movie"],
+  "idScheme": "imdb",
+  "sources": [],
+  "catalogFeatures": [],
+  "userConfig": [],
+  "hosting": "localhost",
+  "port": 7100,
+  "contentPolicyAcknowledged": false
+}

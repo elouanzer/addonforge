@@ -1,0 +1,6 @@
+# Normalise line endings so tools and Dockerfiles behave the same on Windows.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.gif binary

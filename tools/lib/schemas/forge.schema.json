@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "addon.forge.json",
+  "description": "Machine-readable record of the Phase 1 interview (docs/SPEC.md §6.5). Used by `forge new`, `smoke`, `list` and CI.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "description", "template", "resources", "types", "idScheme"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "name": {
+      "description": "Folder name under addons/: lowercase kebab-case.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "maxLength": 50
+    },
+    "displayName": {
+      "description": "Human-readable name shown in Stremio. Defaults to the name in Title Case.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "id": {
+      "description": "Manifest id, dot-separated reverse domain. Defaults to community.addonforge.<name>.",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$"
+    },
+    "description": {
+      "description": "One sentence describing the add-on.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "template": {
+      "type": "string",
+      "enum": ["node-sdk"]
+    },
+    "resources": {
+      "description": "Resources the add-on provides. See https://github.com/Stremio/stremio-addon-sdk/blob/master/docs/api/README.md",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "enum": ["catalog", "meta", "stream", "subtitles", "addon_catalog"] }
+    },
+    "types": {
+      "description": "Content types: movie, series, channel, tv, or a custom type.",
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9_-]+$" }
+    },
+    "idScheme": {
+      "description": "imdb: reuse IMDb ids (tt…, metadata from Cinemeta). custom: own prefix, needs an own meta handler.",
+      "type": "string",
+      "enum": ["imdb", "custom"]
+    },
+    "idPrefix": {
+      "description": "Prefix of the add-on's own ids when idScheme is custom, e.g. \"myaddon:\".",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+[:_]$"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "needsKey": { "type": "boolean" },
+          "rateLimit": { "type": "string" },
+          "terms": { "description": "Link to the source's terms of use.", "type": "string" }
+        }
+      }
+    },
+    "catalogFeatures": {
+      "description": "search: Stremio's search bar also queries the catalog. searchOnly: the catalog only answers searches (no row on the Board). genre: a genre filter on Discover. pagination: more than 100 items, loaded page by page.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "enum": ["search", "searchOnly", "genre", "pagination"] }
+    },
+    "genres": {
+      "description": "Genre options offered in Stremio when catalogFeatures includes genre.",
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "userConfig": {
+      "description": "Values each user provides, mapped to manifest.config. See https://github.com/Stremio/stremio-addon-sdk/blob/master/docs/api/responses/manifest.md#user-data",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "type"],
+        "properties": {
+          "key": { "type": "string", "pattern": "^[a-zA-Z][a-zA-Z0-9_]*$" },
+          "type": { "type": "string", "enum": ["text", "number", "password", "checkbox", "select"] },
+          "title": { "type": "string" },
+          "required": { "type": "boolean" },
+          "default": { "type": "string" },
+          "options": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        },
+        "if": { "properties": { "type": { "const": "select" } } },
+        "then": { "required": ["options"] }
+      }
+    },
+    "hosting": {
+      "description": "localhost: same computer. lan: other devices at home (needs an HTTPS tunnel). internet: always-on public host.",
+      "type": "string",
+      "enum": ["localhost", "lan", "internet"]
+    },
+    "port": {
+      "description": "Port the add-on listens on, on 127.0.0.1. Defaults to 7100 (7000 is taken by AirPlay on macOS).",
+      "type": "integer",
+      "minimum": 1024,
+      "maximum": 65535
+    },
+    "contentPolicyAcknowledged": {
+      "description": "The user confirmed the content policy. Must be true when stream is a resource.",
+      "type": "boolean"
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "resources": { "contains": { "const": "stream" } } }, "required": ["resources"] },
+      "then": { "required": ["contentPolicyAcknowledged"], "properties": { "contentPolicyAcknowledged": { "const": true } } }
+    },
+    {
+      "if": { "properties": { "idScheme": { "const": "custom" } }, "required": ["idScheme"] },
+      "then": { "required": ["idPrefix"] }
+    },
+    {
+      "if": { "properties": { "catalogFeatures": { "contains": { "const": "genre" } } }, "required": ["catalogFeatures"] },
+      "then": { "required": ["genres"], "properties": { "genres": { "minItems": 1 } } }
+    }
+  ]
+}

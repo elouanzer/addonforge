@@ -1,0 +1,24 @@
+{
+  "name": "node-sdk-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Addon Forge template: a Stremio add-on built on stremio-addon-sdk",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "stremio-addon-sdk": "1.6.10"
+  },
+  "//": "overrides: stremio-addon-sdk 1.6.10 (latest, 2022) pins vulnerable path-to-regexp (via router, a ReDoS in URL routing) and tmp (via its unused CLI). These force the patched versions.",
+  "overrides": {
+    "path-to-regexp": "0.1.13",
+    "tmp": "0.2.7"
+  }
+}

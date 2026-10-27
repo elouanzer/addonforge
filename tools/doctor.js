@@ -136,16 +136,24 @@ function checkNpm(env) {
 }
 
 /**
+ * Path helpers for the platform being checked, not the one running the check (tests
+ * check a fake macOS from a Windows runner, and the other way round).
+ * @param {Env} env
+ */
+const platformPath = (env) => (env.platform === 'win32' ? path.win32 : path.posix);
+
+/**
  * Where Docker Desktop puts the CLI when it is not linked onto the PATH.
  * @param {Env} env
  */
 function dockerOffPath(env) {
+  const p = platformPath(env);
   const candidates =
     env.platform === 'darwin'
-      ? [path.join(env.home, '.docker', 'bin', 'docker'), '/Applications/Docker.app/Contents/Resources/bin/docker']
+      ? [p.join(env.home, '.docker', 'bin', 'docker'), '/Applications/Docker.app/Contents/Resources/bin/docker']
       : env.platform === 'win32'
         ? ['C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe']
-        : [path.join(env.home, '.docker', 'bin', 'docker')];
+        : [p.join(env.home, '.docker', 'bin', 'docker')];
   return candidates.find((file) => env.exists(file));
 }
 
@@ -159,7 +167,7 @@ function checkDocker(env) {
   if (!res.ok) {
     const found = dockerOffPath(env);
     const why = found
-      ? `Docker is installed (${found}) but not on your PATH. Open a new terminal; if it persists, add ${path.dirname(found)} to your PATH.`
+      ? `Docker is installed (${found}) but not on your PATH. Open a new terminal; if it persists, add ${platformPath(env).dirname(found)} to your PATH.`
       : hint('docker', env.platform);
     return [
       { name: 'Docker', required: true, status: 'missing', hint: why },

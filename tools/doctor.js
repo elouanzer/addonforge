@@ -41,6 +41,7 @@ const MIN_NODE = [22, 13, 0];
  * @property {boolean} required
  * @property {'ok'|'warn'|'missing'} status
  * @property {string} [version]
+ * @property {string} [path]   Docker only: where it was found when it is not on the PATH
  * @property {string} [hint]
  */
 
@@ -158,43 +159,78 @@ function dockerOffPath(env) {
 }
 
 /**
- * Docker CLI, then whether the engine is running.
+ * How to put Docker's folder on the PATH: for one command (what an assistant should do,
+ * its shell may not keep variables between commands) and for good (the user's choice).
  * @param {Env} env
- * @returns {Check[]}
+ * @param {string} dir
+ */
+function pathHint(env, dir) {
+  if (env.platform === 'win32') {
+    return [
+      `Docker works, but its folder is not on your PATH. In PowerShell, run first: $env:Path = "${dir};" + $env:Path`,
+      `For good: add ${dir} to your user PATH (Settings > System > About > Advanced system settings > Environment Variables), then open a new terminal.`,
+    ].join('\n');
+  }
+  return [
+    `Docker works, but its folder is not on your PATH. Prefix Docker commands with it, e.g.: PATH="${dir}:$PATH" docker compose up -d --build --wait`,
+    `For good: add  export PATH="${dir}:$PATH"  to ~/.zshrc (or ~/.bashrc), then open a new terminal.`,
+  ].join('\n');
+}
+
+/**
+ * Docker CLI (on the PATH, or where Docker Desktop installs it), then whether the
+ * engine is running. Returns the command that runs Docker, for the Compose check.
+ * @param {Env} env
+ * @returns {{ checks: Check[], docker: string|null }}
  */
 function checkDocker(env) {
-  const res = env.exec('docker', ['--version']);
+  let docker = 'docker';
+  let res = env.exec(docker, ['--version']);
+  let offPath = null;
   if (!res.ok) {
-    const found = dockerOffPath(env);
-    const why = found
-      ? `Docker is installed (${found}) but not on your PATH. Open a new terminal; if it persists, add ${platformPath(env).dirname(found)} to your PATH.`
-      : hint('docker', env.platform);
-    return [
-      { name: 'Docker', required: true, status: 'missing', hint: why },
-      { name: 'Docker engine', required: true, status: 'missing', hint: 'Needs the Docker CLI first.' },
-    ];
+    offPath = dockerOffPath(env) || null;
+    if (offPath) {
+      docker = offPath;
+      res = env.exec(docker, ['--version']);
+    }
+  }
+  if (!res.ok) {
+    const why = offPath ? `Docker is installed (${offPath}) but does not run. Reinstall Docker Desktop: ${hint('docker', env.platform)}` : hint('docker', env.platform);
+    return {
+      docker: null,
+      checks: [
+        { name: 'Docker', required: true, status: 'missing', hint: why },
+        { name: 'Docker engine', required: true, status: 'missing', hint: 'Needs the Docker CLI first.' },
+      ],
+    };
   }
   const version = (res.stdout.match(/(\d+\.\d+\.\d+)/) || [])[1] || res.stdout;
-  const engine = env.exec('docker', ['info', '--format', '{{.ServerVersion}}']);
-  return [
-    { name: 'Docker', required: true, status: 'ok', version },
-    engine.ok
-      ? { name: 'Docker engine', required: true, status: 'ok', version: engine.stdout }
-      : {
-          name: 'Docker engine',
-          required: true,
-          status: 'missing',
-          hint: env.platform === 'linux' ? 'Start it: sudo systemctl start docker' : 'Start Docker Desktop and wait until it says "Engine running".',
-        },
-  ];
+  const engine = env.exec(docker, ['info', '--format', '{{.ServerVersion}}']);
+  return {
+    docker,
+    checks: [
+      offPath
+        ? { name: 'Docker', required: true, status: 'warn', version, path: offPath, hint: pathHint(env, platformPath(env).dirname(offPath)) }
+        : { name: 'Docker', required: true, status: 'ok', version },
+      engine.ok
+        ? { name: 'Docker engine', required: true, status: 'ok', version: engine.stdout }
+        : {
+            name: 'Docker engine',
+            required: true,
+            status: 'missing',
+            hint: env.platform === 'linux' ? 'Start it: sudo systemctl start docker' : 'Start Docker Desktop and wait until it says "Engine running".',
+          },
+    ],
+  };
 }
 
 /**
  * @param {Env} env
+ * @param {string} docker  The command that runs Docker.
  * @returns {Check}
  */
-function checkCompose(env) {
-  const res = env.exec('docker', ['compose', 'version', '--short']);
+function checkCompose(env, docker) {
+  const res = env.exec(docker, ['compose', 'version', '--short']);
   if (!res.ok) return { name: 'Docker Compose', required: true, status: 'missing', hint: hint('compose', env.platform) };
   return { name: 'Docker Compose', required: true, status: 'ok', version: res.stdout.replace(/^v/, '') };
 }
@@ -225,11 +261,10 @@ function checkTunnels(env) {
  * @returns {Check[]}
  */
 function runChecks(env) {
-  const docker = checkDocker(env);
-  const compose =
-    docker[0].status === 'ok'
-      ? checkCompose(env)
-      : { name: 'Docker Compose', required: true, status: 'missing', hint: 'Needs the Docker CLI first.' };
+  const { checks: docker, docker: command } = checkDocker(env);
+  const compose = command
+    ? checkCompose(env, command)
+    : { name: 'Docker Compose', required: true, status: 'missing', hint: 'Needs the Docker CLI first.' };
   return [checkNode(env), checkNpm(env), ...docker, compose, ...checkTunnels(env)];
 }
 
@@ -250,7 +285,8 @@ function formatReport(checks, ok) {
   const width = Math.max(...checks.map((c) => c.name.length));
   const lines = checks.map((c) => {
     const line = `  ${c.name.padEnd(width)}  ${label(c)}${c.version ? ` (${c.version})` : ''}`;
-    return c.hint && c.status !== 'ok' ? `${line}\n  ${' '.repeat(width)}  → ${c.hint}` : line;
+    const pad = `  ${' '.repeat(width)}  `;
+    return c.hint && c.status !== 'ok' ? `${line}\n${pad}→ ${c.hint.split('\n').join(`\n${pad}  `)}` : line;
   });
   const tunnelOk = checks.some((c) => !c.required && c.status === 'ok');
   return [
@@ -285,4 +321,19 @@ async function run(args, { env = defaultEnv() } = {}) {
   return ok ? EXIT.OK : EXIT.USAGE;
 }
 
-module.exports = { run, runChecks, hint };
+/**
+ * Environment variables for running `docker` from another tool: unchanged when Docker
+ * is on the PATH, with Docker Desktop's folder added in front when it isn't (the folder
+ * also holds the credential helpers `docker` calls itself).
+ * @returns {NodeJS.ProcessEnv}
+ */
+function dockerSpawnEnv() {
+  const env = defaultEnv();
+  if (env.exec('docker', ['--version']).ok) return process.env;
+  const found = dockerOffPath(env);
+  if (!found) return process.env;
+  const key = Object.keys(process.env).find((k) => k.toUpperCase() === 'PATH') || 'PATH';
+  return { ...process.env, [key]: `${path.dirname(found)}${path.delimiter}${process.env[key] || ''}` };
+}
+
+module.exports = { run, runChecks, hint, dockerSpawnEnv };

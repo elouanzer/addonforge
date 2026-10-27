@@ -57,7 +57,7 @@ test('new <name> with defaults creates a complete add-on', async (t) => {
   assert.equal(await forgeNew(root, ['demo']), 0);
   const dir = path.join(root, 'addons', 'demo');
 
-  for (const file of ['src/addon.js', 'src/server.js', 'src/manifest.js', 'src/sources/example.js', 'test/addon.test.js', 'Dockerfile', 'docker-compose.yml', '.env.example', '.dockerignore', 'package-lock.json']) {
+  for (const file of ['src/addon.js', 'src/server.js', 'src/manifest.js', 'src/sources/index.js', 'src/sources/example.js', 'test/addon.test.js', 'Dockerfile', 'docker-compose.yml', '.env.example', '.dockerignore', 'package-lock.json']) {
     assert.ok(fs.existsSync(path.join(dir, file)), `${file} is missing`);
   }
   const forge = readJson(dir, 'addon.forge.json');
@@ -139,4 +139,26 @@ test('refuses to overwrite without --force, keeps .env with it', async (t) => {
   assert.equal(await forgeNew(root, ['demo']), 2);
   assert.equal(await forgeNew(root, ['demo', '--force']), 0);
   assert.equal(read(dir, '.env'), 'SECRET=1\n');
+});
+
+test('next steps: run with --wait, then validate and smoke; a real query for search-only catalogs', async (t) => {
+  const root = makeRoot(t);
+  const { log } = console;
+  let out = '';
+  console.log = (...a) => (out += `${a.join(' ')}\n`);
+  try {
+    assert.equal(await run(['plain', '--json'], { rootDir: root }), 0);
+    const plain = JSON.parse(out).nextSteps;
+    assert.ok(plain.includes('docker compose up -d --build --wait'));
+    assert.ok(plain.includes('node ../../tools/forge.js smoke http://127.0.0.1:7100'));
+
+    const dir = path.join(root, 'addons', 'finder');
+    fs.mkdirSync(dir);
+    fs.writeFileSync(path.join(dir, 'addon.forge.json'), JSON.stringify({ ...custom(), name: 'finder', resources: ['catalog'], types: ['movie'], catalogFeatures: ['searchOnly'], userConfig: [] }));
+    out = '';
+    assert.equal(await run(['finder', '--json'], { rootDir: root }), 0);
+    assert.match(JSON.parse(out).nextSteps.join('\n'), /smoke http:\/\/127\.0\.0\.1:7123 --search "/);
+  } finally {
+    console.log = log;
+  }
 });

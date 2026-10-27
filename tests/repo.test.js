@@ -120,3 +120,72 @@ test('the secret detector catches typical keys and ignores ordinary text', () =>
     assert.deepEqual(findSecrets(ok), [], ok);
   }
 });
+
+// ------------------------------------------------------------------------- agent docs
+
+const { COMMANDS } = require('../tools/forge');
+
+/** Markdown files an assistant or a user reads (examples' READMEs included). */
+function docFiles() {
+  const recipes = fs.readdirSync(path.join(ROOT, 'docs', 'recipes')).map((f) => `docs/recipes/${f}`);
+  const docs = fs.readdirSync(path.join(ROOT, 'docs')).filter((f) => f.endsWith('.md') && f !== 'SPEC.md').map((f) => `docs/${f}`);
+  const examples = exampleNames.map((n) => `examples/${n}/README.md`);
+  return ['README.md', 'AGENTS.md', 'PROMPT.md', 'CLAUDE.md', 'GEMINI.md', 'tools/README.md', ...docs, ...recipes, ...examples];
+}
+
+/** Linked files still to be written, in the milestone that adds them. Empty this list as they land. */
+const NOT_YET_WRITTEN = new Set(['CONTRIBUTING.md']);
+
+test('the agent flow documents exist', () => {
+  for (const file of ['PROMPT.md', 'docs/checklist.md', 'docs/protocol-cheatsheet.md', 'docs/configuration.md', 'docs/hosting.md', 'docs/recipes/README.md']) {
+    assert.ok(fs.existsSync(path.join(ROOT, file)), `${file} is missing`);
+  }
+  for (const recipe of ['search', 'pagination', 'genre-filter', 'caching', 'rate-limited-apis', 'imdb-mapping', 'subtitles', 'llm-search']) {
+    assert.ok(fs.existsSync(path.join(ROOT, 'docs', 'recipes', `${recipe}.md`)), `docs/recipes/${recipe}.md is missing`);
+    assert.match(read('docs/recipes/README.md'), new RegExp(`\\(${recipe}\\.md\\)`), `docs/recipes/README.md must list ${recipe}`);
+  }
+});
+
+test('PROMPT.md is short and sends the assistant to AGENTS.md', () => {
+  const prompt = read('PROMPT.md');
+  assert.ok(prompt.split('\n').length <= 40, 'PROMPT.md must stay under 40 lines');
+  assert.match(prompt, /AGENTS\.md/);
+});
+
+test('AGENTS.md enforces the content policy and covers every phase', () => {
+  const agents = read('AGENTS.md');
+  for (const phrase of [/torrent/i, /debrid/i, /contentPolicyAcknowledged/, /docs\/checklist\.md/]) assert.match(agents, phrase);
+  for (let phase = 0; phase <= 6; phase++) assert.match(agents, new RegExp(`### Phase ${phase}:`), `Phase ${phase} is missing`);
+});
+
+test('relative links in the docs point to files that exist', () => {
+  const broken = [];
+  for (const file of docFiles()) {
+    const text = read(file).replace(/```[\s\S]*?```/g, ''); // links inside code blocks are examples
+    for (const [, target] of text.matchAll(/\]\(([^)\s]+)\)/g)) {
+      if (/^(https?:|mailto:|#)/.test(target)) continue;
+      const resolved = path.normalize(path.join(path.dirname(file), target.split('#')[0]));
+      if (!fs.existsSync(path.join(ROOT, resolved)) && !NOT_YET_WRITTEN.has(resolved)) broken.push(`${file} → ${target}`);
+    }
+  }
+  assert.deepEqual(broken, []);
+});
+
+test('forge commands named in the docs exist', () => {
+  const unknown = [];
+  for (const file of docFiles()) {
+    for (const [, command] of read(file).matchAll(/tools\/forge\.js ([a-z][a-z-]*)/g)) {
+      if (!Object.hasOwn(COMMANDS, command)) unknown.push(`${file}: ${command}`);
+    }
+  }
+  assert.deepEqual(unknown, []);
+});
+
+test('addon.forge.json examples in the checklist are valid', () => {
+  const blocks = [...read('docs/checklist.md').matchAll(/```json\n([\s\S]*?)```/g)].map((m) => JSON.parse(m[1])).filter((b) => b.template);
+  assert.ok(blocks.length > 0, 'the checklist shows a complete addon.forge.json');
+  for (const block of blocks) {
+    delete block.$schema;
+    assert.deepEqual(validateForgeConfig(block), [], JSON.stringify(block));
+  }
+});

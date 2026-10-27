@@ -8,7 +8,7 @@
 
 const { addonBuilder } = require('stremio-addon-sdk');
 const manifest = require('./manifest');
-const example = require('./sources/example');
+const source = require('./sources');
 
 /** How long Stremio and proxies may cache a response, in seconds. */
 const CACHE_MAX_AGE = 60 * 60;
@@ -24,7 +24,7 @@ async function catalogHandler({ type, id, extra = {} }) {
   const known = manifest.catalogs.some((c) => c.type === type && c.id === id);
   if (!known) return { metas: [] };
 
-  let metas = await example.list({ type });
+  let metas = await source.list({ type });
 
   if (extra.search) {
     const query = String(extra.search).toLowerCase();
@@ -44,7 +44,7 @@ async function catalogHandler({ type, id, extra = {} }) {
  * https://github.com/Stremio/stremio-addon-sdk/blob/master/docs/api/requests/defineMetaHandler.md
  */
 async function metaHandler({ type, id }) {
-  const item = await example.get(id);
+  const item = await source.get(id);
   if (!item || item.type !== type) return { meta: null };
   return { meta: item, cacheMaxAge: CACHE_MAX_AGE };
 }

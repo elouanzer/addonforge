@@ -130,12 +130,15 @@ async function run(args, { rootDir = ROOT } = {}) {
 
   const port = forge.port || DEFAULT_PORT;
   const rel = path.relative(rootDir, target).split(path.sep).join('/');
+  // Search-only catalogs need a real query: "test" usually finds nothing.
+  const search = (forge.catalogFeatures || []).includes('searchOnly') ? ' --search "<a query that has results>"' : '';
   const nextSteps = [
     `cd ${rel}`,
     'npm install',
     'npm test',
-    'docker compose up -d --build',
-    `node ../../tools/forge.js validate http://127.0.0.1:${port}`,
+    'docker compose up -d --build --wait',
+    `node ../../tools/forge.js validate http://127.0.0.1:${port}${search}`,
+    `node ../../tools/forge.js smoke http://127.0.0.1:${port}${search}`,
   ];
   report(json, { ok: true, name, path: rel, configSource, manifest, nextSteps }, () =>
     [

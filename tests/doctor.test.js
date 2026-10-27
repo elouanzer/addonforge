@@ -71,9 +71,33 @@ test('Docker missing: exit 2 with an install hint', async () => {
   assert.equal((await quietRun(['--json'], env)).code, 2);
 });
 
-test('Docker installed but off PATH is explained', () => {
-  const env = fakeEnv({ 'npm --version': '11.0.0' }, { platform: 'darwin', home: '/Users/me', exists: (f) => f === '/Users/me/.docker/bin/docker' });
-  assert.match(byName(runChecks(env))['Docker'].hint, /not on your PATH/);
+test('Docker off the PATH: found, checked through its full path, and the fix is a command an assistant can run', async () => {
+  const bin = '/Users/me/.docker/bin/docker';
+  const tools = { 'npm --version': '11.0.0' };
+  for (const [key, out] of Object.entries(ALL_REQUIRED)) if (key.startsWith('docker ')) tools[key.replace(/^docker/, bin)] = out;
+  const env = fakeEnv(tools, { platform: 'darwin', home: '/Users/me', exists: (f) => f === bin });
+  const checks = byName(runChecks(env));
+  assert.equal(checks['Docker'].status, 'warn');
+  assert.equal(checks['Docker'].path, bin);
+  assert.match(checks['Docker'].hint, /PATH="\/Users\/me\/\.docker\/bin:\$PATH" docker compose up/);
+  assert.equal(checks['Docker engine'].status, 'ok');
+  assert.equal(checks['Docker Compose'].status, 'ok');
+  const { code, out } = await quietRun([], env);
+  assert.equal(code, 0, 'usable Docker is not a blocker');
+  assert.match(out, /export PATH=/);
+});
+
+test('Docker off the PATH on Windows: a PowerShell command', () => {
+  const bin = 'C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.exe';
+  const env = fakeEnv({ [`${bin} --version`]: 'Docker version 29.9.2' }, { platform: 'win32', exists: (f) => f === bin });
+  assert.match(byName(runChecks(env))['Docker'].hint, /\$env:Path = "C:\\Program Files\\Docker\\Docker\\resources\\bin;" \+ \$env:Path/);
+});
+
+test('Docker found off the PATH but not runnable is missing', () => {
+  const env = fakeEnv({}, { platform: 'darwin', home: '/Users/me', exists: (f) => f === '/Users/me/.docker/bin/docker' });
+  const docker = byName(runChecks(env))['Docker'];
+  assert.equal(docker.status, 'missing');
+  assert.match(docker.hint, /does not run/);
 });
 
 test('Docker engine not running', () => {

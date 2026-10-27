@@ -10,6 +10,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { spawnSync } = require('node:child_process');
+const { dockerSpawnEnv } = require('./doctor');
 const { parseArgs } = require('node:util');
 const { EXIT } = require('./lib/exit-codes');
 const { report, reportError } = require('./lib/output');
@@ -38,6 +39,7 @@ function dockerContainers() {
     encoding: 'utf8',
     timeout: 15000,
     shell: process.platform === 'win32',
+    env: dockerSpawnEnv(),
   });
   if (res.status !== 0) return null;
   const byDir = new Map();

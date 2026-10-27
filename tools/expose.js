@@ -19,7 +19,7 @@ const { reportError } = require('./lib/output');
 const { getJson } = require('./lib/http');
 const { parseConfig } = require('./lib/addon-url');
 const { checkLive } = require('./lib/check-live');
-const { hint } = require('./doctor');
+const { hint, dockerSpawnEnv } = require('./doctor');
 
 /** Same pinned image as the template's Compose tunnel profile. */
 const CLOUDFLARED_IMAGE = 'cloudflare/cloudflared:2026.10.4';
@@ -34,6 +34,7 @@ const TRYCLOUDFLARE = /https:\/\/[a-z0-9-]+\.trycloudflare\.com/;
  * @property {RegExp} url                    Matches the public URL in the tool's output.
  * @property {boolean} [explicitOnly]        Only used with --tool.
  * @property {boolean} [cmdShim]             An npm .cmd shim on Windows, which needs a shell to run.
+ * @property {boolean} [usesDocker]          Runs `docker`, found off the PATH too (see doctor).
  * @property {string} install                How to get it.
  */
 
@@ -74,6 +75,7 @@ const TUNNELS = [
     ],
     url: TRYCLOUDFLARE,
     explicitOnly: true,
+    usesDocker: true,
     install: `Docker Desktop (macOS, Windows). Pulls ${CLOUDFLARED_IMAGE}.`,
   },
 ];
@@ -82,9 +84,12 @@ const TUNNELS = [
 const useShell = (t) => Boolean(t.cmdShim) && process.platform === 'win32';
 
 /** @param {Tunnel} t */
+const spawnEnv = (t) => (t.usesDocker ? dockerSpawnEnv() : process.env);
+
+/** @param {Tunnel} t */
 function isAvailable(t) {
   const [cmd, args] = t.detect;
-  const res = spawnSync(cmd, args, { stdio: 'ignore', timeout: 15000, shell: useShell(t) });
+  const res = spawnSync(cmd, args, { stdio: 'ignore', timeout: 15000, shell: useShell(t), env: spawnEnv(t) });
   return res.status === 0;
 }
 
@@ -100,7 +105,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
  */
 function startTunnel(tunnel, port, timeoutMs) {
   const [cmd, args] = tunnel.command(port);
-  const child = spawn(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], shell: useShell(tunnel) });
+  const child = spawn(cmd, args, { stdio: ['ignore', 'pipe', 'pipe'], shell: useShell(tunnel), env: spawnEnv(tunnel) });
   const tail = [];
   return new Promise((resolve, reject) => {
     const fail = (message) => {

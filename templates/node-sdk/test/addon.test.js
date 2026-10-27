@@ -6,7 +6,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const manifest = require('../src/manifest');
-const example = require('../src/sources/example');
+const source = require('../src/sources');
 const { handlers } = require('../src/addon');
 
 const catalog = manifest.catalogs[0];
@@ -32,7 +32,7 @@ test('manifest has the fields Stremio requires', () => {
 });
 
 test('catalog returns meta previews with id, type, name and poster', { skip: !catalog }, async (t) => {
-  t.mock.method(example, 'list', async () => fakeItems(3));
+  t.mock.method(source, 'list', async () => fakeItems(3));
   const { metas } = await handlers.catalogHandler({ type: catalog.type, id: catalog.id, extra: { ...base } });
   assert.equal(metas.length, 3);
   for (const meta of metas) {
@@ -41,19 +41,19 @@ test('catalog returns meta previews with id, type, name and poster', { skip: !ca
 });
 
 test('catalog search filters by name', { skip: !catalog }, async (t) => {
-  t.mock.method(example, 'list', async () => fakeItems(4));
+  t.mock.method(source, 'list', async () => fakeItems(4));
   const { metas } = await handlers.catalogHandler({ type: catalog.type, id: catalog.id, extra: { search: 'odd' } });
   assert.deepEqual(metas.map((m) => m.name), ['Odd film 1', 'Odd film 3']);
 });
 
 test('catalog genre filter', { skip: !catalog }, async (t) => {
-  t.mock.method(example, 'list', async () => fakeItems(4));
+  t.mock.method(source, 'list', async () => fakeItems(4));
   const { metas } = await handlers.catalogHandler({ type: catalog.type, id: catalog.id, extra: { ...base, genre: 'Drama' } });
   assert.equal(metas.length, 2);
 });
 
 test('catalog pages by 100 with skip', { skip: !catalog }, async (t) => {
-  t.mock.method(example, 'list', async () => fakeItems(150));
+  t.mock.method(source, 'list', async () => fakeItems(150));
   const first = await handlers.catalogHandler({ type: catalog.type, id: catalog.id, extra: { ...base } });
   const second = await handlers.catalogHandler({ type: catalog.type, id: catalog.id, extra: { ...base, skip: '100' } });
   assert.equal(first.metas.length, 100);
@@ -67,7 +67,7 @@ test('unknown catalog returns an empty list', async () => {
 
 test('meta returns the item, or null when unknown', { skip: !declares('meta') }, async (t) => {
   const [item] = fakeItems(1, manifest.types[0]);
-  t.mock.method(example, 'get', async (id) => (id === item.id ? item : null));
+  t.mock.method(source, 'get', async (id) => (id === item.id ? item : null));
   assert.deepEqual((await handlers.metaHandler({ type: item.type, id: item.id })).meta, item);
   assert.equal((await handlers.metaHandler({ type: item.type, id: 'tt9999999' })).meta, null);
 });

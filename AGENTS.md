@@ -90,6 +90,8 @@ Work in `addons/<name>/`:
 ## Things that trip assistants up
 
 - **Port 7000 on macOS is AirPlay**, which answers `403`. Add-ons use 7100 and up.
+- **On Windows, Hyper-V and WSL reserve ranges of ports.** If Docker reports a port as "not available" or "forbidden", run `netsh interface ipv4 show excludedportrange protocol=tcp` and set `HOST_PORT` in the add-on's `.env` to a port outside every range.
+- **Use the user's shell syntax.** Windows PowerShell 5.1 has no `&&` and strips double quotes from arguments: run commands one at a time, and escape JSON quotes (`--config '{\"key\":\"value\"}'`). Paths in commands you give the user should suit their system too.
 - **Inside Docker, `127.0.0.1` is the container itself.** To reach a service on the user's computer (Ollama, a local API), use `host.docker.internal`; the template's Compose file maps it.
 - **Search-only catalogs** (`searchOnly`) never appear on the Board; they show as a row in search results.
 - **Stremio caches responses.** After changing a handler, a test search may show old results; the response's `cacheMaxAge` sets how long.

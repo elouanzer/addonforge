@@ -23,7 +23,11 @@ git clone https://github.com/elouanzer/addonforge.git
 ```
 
 ```bash
-cd addonforge && node tools/forge.js doctor
+cd addonforge
+```
+
+```bash
+node tools/forge.js doctor
 ```
 
 `doctor` checks your setup and tells you how to fix anything missing.
@@ -36,7 +40,11 @@ cd addonforge && node tools/forge.js doctor
 **Try a ready-made add-on first** (about a minute):
 
 ```bash
-cd examples/hello-catalog && docker compose up -d --build --wait
+cd examples/hello-catalog
+```
+
+```bash
+docker compose up -d --build --wait
 ```
 
 Then, in Stremio, open **Add-ons**, paste `http://127.0.0.1:7100/manifest.json` into the search bar, and install. A "Hello Catalog" row of public-domain films appears on your Board. Remove it later with `docker compose down` in the same folder.
@@ -75,9 +83,23 @@ Every command accepts `--json`, and `node tools/forge.js --help` lists their opt
 node tools/forge.js new my-catalog
 ```
 
+New add-ons use port 7100, like `hello-catalog`: stop it first (`docker compose down` in its folder), choose another `port` in `addons/<name>/addon.forge.json` before running `new`, or set `HOST_PORT` in the add-on's `.env`.
+
+In the add-on's folder (`cd addons/my-catalog`), install, test and start it:
+
 ```bash
-cd addons/my-catalog && npm install && npm test && docker compose up -d --build --wait && cd ../..
+npm install
 ```
+
+```bash
+npm test
+```
+
+```bash
+docker compose up -d --build --wait
+```
+
+Back in the `addonforge` folder (`cd ../..`), check it:
 
 ```bash
 node tools/forge.js validate http://127.0.0.1:7100
@@ -87,7 +109,7 @@ node tools/forge.js validate http://127.0.0.1:7100
 node tools/forge.js smoke http://127.0.0.1:7100
 ```
 
-New add-ons use port 7100, like `hello-catalog`: stop it first (`docker compose down` in its folder), choose another `port` in `addons/<name>/addon.forge.json` before running `new`, or set `HOST_PORT` in the add-on's `.env`. Then edit `addons/my-catalog/src/`: [`AGENTS.md`](AGENTS.md) describes each phase, and [`docs/checklist.md`](docs/checklist.md) the settings in `addon.forge.json`. Your add-ons live in `addons/`, which git ignores.
+Then edit `addons/my-catalog/src/`: [`AGENTS.md`](AGENTS.md) describes each phase, and [`docs/checklist.md`](docs/checklist.md) the settings in `addon.forge.json`. Your add-ons live in `addons/`, which git ignores.
 
 ## Hosting
 

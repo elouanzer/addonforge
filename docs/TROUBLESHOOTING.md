@@ -15,7 +15,7 @@ Problems people actually run into, and their fixes. Start with `node tools/forge
 | Symptom | Fix |
 |---|---|
 | `Bind for 127.0.0.1:7100 failed: port is already allocated` | Another add-on uses that port, often `hello-catalog`. `node tools/forge.js list` shows which. Stop it (`docker compose down` in its folder), or move yours: set `HOST_PORT=7104` (any free port) in its `.env`, restart it, and use that port in its URL. |
-| `http://127.0.0.1:7000` answers `403` on a Mac | That's macOS's AirPlay Receiver, not your add-on. Addon Forge uses 7100 and up. |
+| `http://127.0.0.1:7000` answers `403` on a Mac | That's macOS's AirPlay Receiver, not your add-on. Addon Forge uses 7100 and up. (On Windows, port problems look different: see [On Windows](#on-windows).) |
 | `docker compose up --wait` fails with "unhealthy" | The add-on crashed at startup. `docker compose logs addon` shows the error, often a typo in the code or a missing setting in `.env`. |
 | A change to `.env` or the code has no effect | Rebuild and restart: `docker compose up -d --build --wait`. |
 | The add-on can't reach a service on your computer (Ollama, a local API) | Inside Docker, `127.0.0.1` is the container itself. Use `http://host.docker.internal:<port>` instead. |
@@ -28,7 +28,16 @@ Problems people actually run into, and their fixes. Start with `node tools/forge
 | A search-only catalog shows "0 item(s)" | `validate` and `smoke` search for "test" by default. Give them a real query: `--search "70s thriller"`. |
 | `validate` warns `not-configured` on an add-on with user settings | It tested without settings. Pass test values: `--config '{"username":"test"}'` to `validate`, `smoke` and `install-link`. |
 | `slow-response` warnings, or requests that time out after 15 s | The source or the model is slow. Cache results ([recipes/caching.md](recipes/caching.md)), or use a faster backend. |
-| On Windows PowerShell 5, `--config` says the JSON is invalid | PowerShell 5 strips double quotes from arguments. Escape them, `--config '{\"username\":\"test\"}'`, or use PowerShell 7. |
+
+## On Windows
+
+| Symptom | Fix |
+|---|---|
+| Docker says `Ports are not available` … `An attempt was made to access a socket in a way forbidden by its access permissions` | Windows reserves ranges of ports for Hyper-V and WSL, and the add-on's port fell in one. See them with `netsh interface ipv4 show excludedportrange protocol=tcp`, then set `HOST_PORT` in the add-on's `.env` to a port outside every range, and use that port in its URL. |
+| `The token '&&' is not a valid statement separator` | Windows PowerShell 5.1 can't chain commands with `&&`. Run them one at a time, or use PowerShell 7, Git Bash or the Command Prompt. |
+| `--config` says the JSON is invalid | Windows PowerShell 5.1 strips double quotes from arguments. Escape them, `--config '{\"username\":\"test\"}'`, or use PowerShell 7. |
+| `docker` is not recognized | Docker Desktop's folder isn't on your PATH. `doctor` finds it and prints the PowerShell command to fix it. |
+| Docker Desktop won't start | It needs WSL 2 and virtualization turned on. Follow the steps Docker Desktop shows at startup, or [its Windows install guide](https://docs.docker.com/desktop/setup/install/windows-install/). |
 
 ## In Stremio
 

@@ -74,9 +74,7 @@ Both must pass, and CI runs them on Linux, macOS and Windows with Node 22 and 24
 node tools/forge.js new template-check
 ```
 
-```bash
-cd addons/template-check && npm install && npm test && docker compose up -d --build --wait
-```
+Then, in `addons/template-check`, run `npm install`, `npm test` and `docker compose up -d --build --wait`, and from the repository root:
 
 ```bash
 node tools/forge.js validate http://127.0.0.1:7100

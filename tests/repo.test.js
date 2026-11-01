@@ -209,3 +209,13 @@ test('addon.forge.json examples in the checklist are valid', () => {
     assert.deepEqual(validateForgeConfig(block), [], JSON.stringify(block));
   }
 });
+
+test('shell commands in the docs also run in Windows PowerShell 5.1 (no &&)', () => {
+  const chained = [];
+  for (const file of docFiles()) {
+    for (const [, block] of read(file).matchAll(/```(?:bash|sh|shell)\n([\s\S]*?)```/g)) {
+      if (block.includes('&&')) chained.push(`${file}: ${block.trim().split('\n')[0]}`);
+    }
+  }
+  assert.deepEqual(chained, [], 'split chained commands into one command per block');
+});

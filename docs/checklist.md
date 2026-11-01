@@ -108,7 +108,7 @@ Read [configuration.md](configuration.md) before answering: values entered there
 |---|---|
 | Ask | Don't ask: choose and mention it. |
 | Field | `port` |
-| Default | `7100`, or the next free one: run `node tools/forge.js list` and pick a port no other add-on uses. Never 7000 (taken by AirPlay on macOS). |
+| Default | `7100`, or the next free one: run `node tools/forge.js list` and pick a port no other add-on uses. Never 7000 (taken by AirPlay on macOS). On Windows, also avoid the ranges listed by `netsh interface ipv4 show excludedportrange protocol=tcp`. |
 
 ### 10. Content policy (only if `stream` is a resource)
 

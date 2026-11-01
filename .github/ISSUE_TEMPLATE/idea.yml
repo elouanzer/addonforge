@@ -1,0 +1,24 @@
+name: Idea or example proposal
+description: A new recipe, tool feature or example add-on.
+title: "[idea] "
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What should exist, and who would it help?
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data sources (for an add-on or recipe)
+      description: Where would the data come from, and do its terms of use allow it?
+  - type: checkboxes
+    id: policy
+    attributes:
+      label: Content policy
+      options:
+        - label: This is not about scraping or indexing torrents, debrid services, or streaming content without authorization (see CONTRIBUTING.md).
+          required: true

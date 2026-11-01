@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://github.com/elouanzer/addonforge/security/advisories/new
+    about: Report security problems privately, not in a public issue (see SECURITY.md).
+  - name: Stremio itself
+    url: https://www.stremio.com/
+    about: Addon Forge is an independent project. Problems with the Stremio app go to Stremio.

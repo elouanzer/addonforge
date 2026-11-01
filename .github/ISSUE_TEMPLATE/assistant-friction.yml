@@ -1,0 +1,60 @@
+name: Assistant friction
+description: A coding assistant following PROMPT.md got stuck, guessed wrong, or needed your help.
+title: "[friction] "
+labels: ["assistant-friction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        These reports are how the guided flow gets better. Short is fine. Please remove API keys and personal data from anything you paste.
+  - type: input
+    id: assistant
+    attributes:
+      label: Assistant and model
+      placeholder: "Claude Code (Claude Opus 5.5), Gemini CLI, Codex…"
+    validations:
+      required: true
+  - type: input
+    id: idea
+    attributes:
+      label: The idea you gave it
+      placeholder: "French subtitles from a folder on my computer"
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase where it went wrong
+      description: The phases are described in AGENTS.md.
+      options:
+        - "0: Environment"
+        - "1: Interview"
+        - "2: Scaffold"
+        - "3: Implement"
+        - "4: Run and validate"
+        - "5: Install"
+        - "6: Wrap up"
+        - "Several, or not sure"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did it do, what did you expect, and did you have to fix something by hand?
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant output
+      description: The command it ran and its output (from `node tools/forge.js …`, `docker compose logs`, the assistant's messages).
+      render: text
+  - type: dropdown
+    id: finished
+    attributes:
+      label: Did it finish?
+      options:
+        - "Yes, the add-on works in Stremio"
+        - "Yes, after I helped"
+        - "No"

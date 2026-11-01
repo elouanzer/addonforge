@@ -13,7 +13,7 @@ const ROOT = path.join(__dirname, '..');
 const read = (file) => fs.readFileSync(path.join(ROOT, file), 'utf8');
 
 test('required top-level files exist', () => {
-  for (const file of ['README.md', 'AGENTS.md', 'CLAUDE.md', 'GEMINI.md', 'LICENSE']) {
+  for (const file of ['README.md', 'AGENTS.md', 'CLAUDE.md', 'GEMINI.md', 'LICENSE', 'CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'SECURITY.md', 'SHOWCASE.md']) {
     assert.ok(fs.existsSync(path.join(ROOT, file)), `${file} is missing`);
   }
 });
@@ -35,6 +35,28 @@ test('README states the content policy and independence from Stremio', () => {
   const readme = read('README.md');
   assert.match(readme, /content policy/i);
   assert.match(readme, /independent community project/i);
+});
+
+test('CONTRIBUTING states the content policy; the PR template asks for it', () => {
+  const contributing = read('CONTRIBUTING.md');
+  assert.match(contributing, /^## Content policy$/m);
+  for (const phrase of [/torrent/i, /debrid/i, /legitimate/i]) assert.match(contributing, phrase);
+  assert.match(read('.github/PULL_REQUEST_TEMPLATE.md'), /- \[ \] \*\*Content policy:\*\*/);
+});
+
+test('issue templates are issue forms, and a content-policy check guards ideas', () => {
+  const dir = path.join(ROOT, '.github', 'ISSUE_TEMPLATE');
+  const forms = fs.readdirSync(dir).filter((f) => f.endsWith('.yml') && f !== 'config.yml');
+  assert.ok(forms.length >= 3, 'bug, friction and idea templates');
+  for (const form of forms) {
+    const text = fs.readFileSync(path.join(dir, form), 'utf8');
+    assert.match(text, /^name: .+/m, `${form}: name`);
+    assert.match(text, /^description: .+/m, `${form}: description`);
+    assert.match(text, /^body:$/m, `${form}: body`);
+    assert.doesNotMatch(text, /\t/, `${form}: YAML must not contain tabs`);
+  }
+  assert.match(fs.readFileSync(path.join(dir, 'idea.yml'), 'utf8'), /torrents[\s\S]*required: true/);
+  assert.match(fs.readFileSync(path.join(dir, 'config.yml'), 'utf8'), /blank_issues_enabled: false/);
 });
 
 // ------------------------------------------------------------------------- examples
@@ -130,11 +152,9 @@ function docFiles() {
   const recipes = fs.readdirSync(path.join(ROOT, 'docs', 'recipes')).map((f) => `docs/recipes/${f}`);
   const docs = fs.readdirSync(path.join(ROOT, 'docs')).filter((f) => f.endsWith('.md') && f !== 'SPEC.md').map((f) => `docs/${f}`);
   const examples = exampleNames.map((n) => `examples/${n}/README.md`);
-  return ['README.md', 'AGENTS.md', 'PROMPT.md', 'CLAUDE.md', 'GEMINI.md', 'tools/README.md', ...docs, ...recipes, ...examples];
+  const community = ['CONTRIBUTING.md', 'CODE_OF_CONDUCT.md', 'SECURITY.md', 'SHOWCASE.md', '.github/PULL_REQUEST_TEMPLATE.md'];
+  return ['README.md', 'AGENTS.md', 'PROMPT.md', 'CLAUDE.md', 'GEMINI.md', 'tools/README.md', ...community, ...docs, ...recipes, ...examples];
 }
-
-/** Linked files still to be written, in the milestone that adds them. Empty this list as they land. */
-const NOT_YET_WRITTEN = new Set(['CONTRIBUTING.md']);
 
 test('the agent flow documents exist', () => {
   for (const file of ['PROMPT.md', 'docs/checklist.md', 'docs/protocol-cheatsheet.md', 'docs/configuration.md', 'docs/hosting.md', 'docs/recipes/README.md']) {
@@ -165,7 +185,7 @@ test('relative links in the docs point to files that exist', () => {
     for (const [, target] of text.matchAll(/\]\(([^)\s]+)\)/g)) {
       if (/^(https?:|mailto:|#)/.test(target)) continue;
       const resolved = path.normalize(path.join(path.dirname(file), target.split('#')[0]));
-      if (!fs.existsSync(path.join(ROOT, resolved)) && !NOT_YET_WRITTEN.has(resolved)) broken.push(`${file} → ${target}`);
+      if (!fs.existsSync(path.join(ROOT, resolved))) broken.push(`${file} → ${target}`);
     }
   }
   assert.deepEqual(broken, []);
